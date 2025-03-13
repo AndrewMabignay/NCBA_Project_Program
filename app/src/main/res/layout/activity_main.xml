@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFF"
+>
 
 
     <!-- Main Content -->
@@ -14,6 +16,7 @@
     >
         <!-- =============== HEADER =============== -->
         <FrameLayout
+            android:id="@+id/Header"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:elevation="25dp"
@@ -64,6 +67,10 @@
                         android:textColor="@color/lightYellow"
                         android:fontFamily="@font/poppins_medium"
                         android:layout_marginBottom="3dp"
+                        android:shadowColor="#80000000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="3"
                     />
 
                     <TextView
@@ -92,6 +99,118 @@
 
 
         <!-- Your Main Content Here -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ncba_taytay"
+                android:scaleType="centerCrop"
+                android:alpha="0.6"
+            />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <!-- Shadow -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@drawable/shadow_background"
+                        android:layout_gravity="bottom"/>
+
+                    <!-- 58 Anniversary Image -->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fiftyeightanniversary"
+                        android:adjustViewBounds="true"/>
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp"
+                >
+
+                    <!-- ========= 1. ADMISSION ========= -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:padding="20dp"
+                        android:layout_weight="1"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf19c"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADMISSION"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:letterSpacing="0.002"
+                        />
+                    </LinearLayout>
+
+                    <!-- ========= 2. ACADEMIC ========= -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:padding="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf02d"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textColor="@color/lightWhite"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACADEMICS"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/lightWhite"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:letterSpacing="0.002"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
 
 
     </LinearLayout>
