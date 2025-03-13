@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+        <!-- =============== HEADER =============== -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="25dp"
+        >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ncba_background"
+                android:scaleType="centerCrop"
+            />
+
+            <!-- FIELDS -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="25dp"
+            >
+                <ImageView
+                    android:id="@+id/openDrawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_sort_by_size"
+                    android:contentDescription="Open Drawer"
+                    android:clickable="true"
+                />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ncba_logo"
+                    android:layout_marginVertical="14dp"
+                    android:layout_marginLeft="10dp"
+                />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/headerStatementOne"
+                        android:textSize="9sp"
+                        android:textColor="@color/lightYellow"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginBottom="3dp"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/headerStatementTwo"
+                        android:textSize="9sp"
+                        android:textColor="@color/lightGreen"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginBottom="3dp"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/headerStatementThree"
+                        android:textSize="9sp"
+                        android:textColor="@color/lightYellow"
+                        android:fontFamily="@font/poppins_medium"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+
+        <!-- Your Main Content Here -->
+
+
+    </LinearLayout>
+
+
+    <!-- Manual Navigation Drawer (Sliding Panel) -->
+    <LinearLayout
+        android:id="@+id/manual_drawer"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#333"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageButton
+            android:id="@+id/closeDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Close Drawer"
+        />
+
+
+        <!-- Manually Add Navigation Items Here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADMISSION"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

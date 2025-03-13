@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NCBA_Project_Program</string>
+
+    <!-- HEADER -->
+    <string name="headerStatementOne">Mores et Scientia</string>
+    <string name="headerStatementTwo">NATIONAL COLLEGE OF BUSINESS AND ARTS</string>
+    <string name="headerStatementThree">Educating Globally Competitive Filipinos</string>
+</resources>
