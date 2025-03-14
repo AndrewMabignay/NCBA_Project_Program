@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- ================ ADMISSION MAIN ================ -->
+        <activity android:name=".Admission">
+
+        </activity>
     </application>
 
 </manifest>
