@@ -38,13 +38,23 @@ public class MainFragment extends Fragment {
         console = view.findViewById(R.id.Game);
     }
 
-    private Fragment admissionFragment;
+    private Fragment admissionFragment, academicFragment;
     private void AddInteraction() {
         admission.setOnClickListener(e -> {
             admissionFragment = new AdmissionFragment();
             requireActivity().getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.Main_Fragment_Container, admissionFragment)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        // Academic Fragment
+        academics.setOnClickListener(e -> {
+            academicFragment = new AcademicFragment();
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left)
+                    .replace(R.id.Main_Fragment_Container, academicFragment)
                     .addToBackStack(null)
                     .commit();
         });

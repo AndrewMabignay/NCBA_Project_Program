@@ -5,4 +5,21 @@
     <string name="headerStatementOne">Mores et Scientia</string>
     <string name="headerStatementTwo">NATIONAL COLLEGE OF BUSINESS AND ARTS</string>
     <string name="headerStatementThree">Educating Globally Competitive Filipinos</string>
+
+    <!-- 2. ====================== ACADEMIC PROGRAMS ====================== -->
+    <string name="academicStatementOne">
+        Living up to its founder’s vision, NCBA has opted to remain as a specialized school and its growth measured and steady through the years. From that small edifice along R. Papa St. , NCBA gradually expanded its academic programs and facilities with the purpose of producing for the nation the type of educated manpower it needs for its development and well-being.
+    </string>
+
+    <string name="academicStatementTwo">
+        All the policies, programs and activities of the College are in consonance with its school philosophy, which states that “every individual, regardless of race, creed and age, has the inalienable right to quality education, which is in keeping with his dignity as a human being and which he needs in the attainment of a happy and useful life and in working for unity and peace in the society of man.”
+    </string>
+
+    <string name="academicStatementThree">
+        In addition, the National College of Business and Arts offers a rich academic program that includes extensive internship opportunities for students interested in pursuing a career in public or private service.
+    </string>
+
+    <string name="academicStatementFour">
+        Finally, preparing for a career is a vital part of NCBA’s education program. The College’s commitment to quality education was likewise manifested in its training of would-be teachers as evidenced in the yearly high percentage of board exam passers. Graduates of other college courses intending to pursue a career in grade school or high school teaching are also accommodated in NCBA’s education program via the Certificate of Professional Education.
+    </string>
 </resources>

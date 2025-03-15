@@ -31,8 +31,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
-                    android:background="@drawable/shadow_background"
-                    android:layout_gravity="bottom"/>
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/shadow_background" />
 
                 <!-- 58 Anniversary Image -->
                 <ImageView
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingHorizontal="20dp"
-                >
+            >
 
                 <!-- ========= 1. ADMISSION ========= -->
                 <LinearLayout

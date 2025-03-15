@@ -3,13 +3,13 @@
     <!-- Shadow (darker background) -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#80000000"/> <!-- Shadow color -->
+            <solid android:color="#33000000"/> <!-- Shadow color -->
 <!--            <corners android:radius="8dp"/>-->
         </shape>
     </item>
 
     <!-- Main background shifted slightly down -->
-    <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="2dp">
+    <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="3dp">
         <shape android:shape="rectangle">
             <solid android:color="@color/slightDarkGreen"/> <!-- Background color -->
 <!--            <corners android:radius="8dp"/>-->
