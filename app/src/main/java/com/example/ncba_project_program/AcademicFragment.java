@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 
 public class AcademicFragment extends Fragment {
-    private LinearLayout admission, academics, aboutUs, contactUs, webMaster, console;
+    private LinearLayout academicProgram, graduateProgram, collegiateProgram, programOfferings;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -20,10 +20,29 @@ public class AcademicFragment extends Fragment {
     }
 
     private void AddElement(View view) {
-
+        graduateProgram = view.findViewById(R.id.GraduateProgram);
     }
-    private void AddInteraction() {
 
+    Fragment graduateFragment;
+
+    private void AddInteraction() {
+        graduateProgram.setOnClickListener(e -> {
+            if (graduateFragment == null) {
+                graduateFragment = new AcademicGraduateSubFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, graduateFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
     }
 }
 

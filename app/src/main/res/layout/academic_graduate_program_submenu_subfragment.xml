@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GRADUATE PROGRAMS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:letterSpacing="0.03"
+    />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="5dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <!-- CENTER FOR GRADUATE STUDIES IN BUSINESS AND MANAGEMENT [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Center for Graduate Studies in Business and Management"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <!-- PROGRAM OBJECTIVES [TITLE] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROGRAM OBJECTIVES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/graduateStatementOneProgramObjectives"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graduateStatementTwoProgramObjectives"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graduateStatementThreeProgramObjectives"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graduateStatementFiveProgramObjectives"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp"
+            />
+
+            <!-- ACADEMIC PROGRAMS [TITLE] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACADEMIC PROGRAMS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <LinearLayout
+                android:id="@+id/MBA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+            >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MBA"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

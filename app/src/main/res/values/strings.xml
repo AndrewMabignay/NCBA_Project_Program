@@ -22,4 +22,25 @@
     <string name="academicStatementFour">
         Finally, preparing for a career is a vital part of NCBA’s education program. The College’s commitment to quality education was likewise manifested in its training of would-be teachers as evidenced in the yearly high percentage of board exam passers. Graduates of other college courses intending to pursue a career in grade school or high school teaching are also accommodated in NCBA’s education program via the Certificate of Professional Education.
     </string>
+
+    <!-- 2.1. ====================== ACADEMIC PROGRAMS | GRADUATE PROGRAMS ====================== -->
+    <string name="graduateStatementOneProgramObjectives">
+        In the business world, there are increasing opportunities and competitiveness. At stake are key managerial positions and entrepreneurial possibilities. To those who are competent and qualified there are unlimited potentials. The National College of Business and Arts, aware of these opportunities offers an MBA Program with the following underlying objectives for students:
+    </string>
+
+    <string name="graduateStatementTwoProgramObjectives">
+        • To develop (whether they are already gainfully employed in business establishments or engaged in their own private business) the entrepreneurial and managerial ability to successfully confront the complex problems of the business world.
+    </string>
+
+    <string name="graduateStatementThreeProgramObjectives">
+        • To develop critical thinking directed towards action, reduce margin or error in the formulation and implementation of decisions.
+    </string>
+
+    <string name="graduateStatementFourProgramObjectives">
+        • To develop a real sense of relationship between the economic, spiritual, political, social and technological environment vis a vis the dynamic life of the business firm.
+    </string>
+
+    <string name="graduateStatementFiveProgramObjectives">
+        • To afford professionals an opportunity to pursue a comprehensive program in business management which includes not only theories, concepts, and techniques in business, as well as its application based on Philippine conditions.
+    </string>
 </resources>

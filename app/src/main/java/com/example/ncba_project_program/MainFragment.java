@@ -41,23 +41,33 @@ public class MainFragment extends Fragment {
     private Fragment admissionFragment, academicFragment;
     private void AddInteraction() {
         admission.setOnClickListener(e -> {
-            admissionFragment = new AdmissionFragment();
-            requireActivity().getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.Main_Fragment_Container, admissionFragment)
-                    .addToBackStack(null)
-                    .commit();
+//            admissionFragment = new AdmissionFragment();
+//            requireActivity().getSupportFragmentManager().beginTransaction()
+//                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+//                    .replace(R.id.Main_Fragment_Container, admissionFragment)
+//                    .addToBackStack(null)
+//                    .commit();
         });
 
         // Academic Fragment
         academics.setOnClickListener(e -> {
-            academicFragment = new AcademicFragment();
+            if (academicFragment == null) {
+                academicFragment = new AcademicFragment();
+            }
+
             requireActivity().getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_out_right, android.R.anim.slide_in_left)
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
                     .replace(R.id.Main_Fragment_Container, academicFragment)
+                    .setReorderingAllowed(true)
                     .addToBackStack(null)
                     .commit();
         });
+
     }
 
 
