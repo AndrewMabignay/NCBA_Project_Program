@@ -43,4 +43,48 @@
     <string name="graduateStatementFiveProgramObjectives">
         • To afford professionals an opportunity to pursue a comprehensive program in business management which includes not only theories, concepts, and techniques in business, as well as its application based on Philippine conditions.
     </string>
+
+    <!-- 2.1.1. ====================== ACADEMIC PROGRAMS | GRADUATE PROGRAMS | MBA ====================== -->
+    <string name="graduateStatementMBAFirst">
+        The Program offers Plan A (Thesis Program): \n
+        •  Basic Course (9 units) \n
+        •  Major Course (15 units) \n
+        •  Cognate Course (12 units) \n
+        •  Thesis (6 units)
+    </string>
+
+    <string name="graduateStatementMBASecond">
+        Plan B (Non-Thesis Program) \n
+        •  Basic Course (9 units) \n
+        •  Major Course (15 units) \n
+        •  Cognate Course (12 units)
+    </string>
+
+    <!-- 2.1.2. ====================== ACADEMIC PROGRAMS | GRADUATE PROGRAMS | MPA ====================== -->
+    <string name="graduateStatementMPAFirst">
+        The aim of the Master in Public Administration program is to assist one in acquiring the knowledge, competencies, and ethical values necessary to operate effectively in an administrative capacity.
+    </string>
+
+    <string name="graduateStatementMPASecond">
+        The Program offers Plan A (Thesis Program): \n
+        •  Basic Course (9 units) \n
+        •  Major Course (15 units) \n
+        •  Cognate Course (12 units) \n
+        •  Thesis (6 units)
+    </string>
+
+    <string name="graduateStatementMPAThird">
+        Plan B (Non-Thesis Program) \n
+        •  Basic Course (9 units) \n
+        •  Major Course (15 units) \n
+        •  Cognate Course (12 units)
+    </string>
+
+    <!-- 2.2. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS ====================== -->
+    <string name="collegiateStatementTitleFirst">BS ACCOUNTANCY (BSA) AND BS MANAGEMENT ACCOUNTING (BSMA)</string>
+    <string name="collegiateStatementTitleSecond">BS BUSINESS ADMINISTRATION</string>
+    <string name="collegiateStatementTitleThird">BS INFORMATION SYSTEM (BSIS) and BS COMPUTER SCIENCE (BSCS)</string>
+    <string name="collegiateStatementTitleFourth">BS IN HOSPITALITY MANAGEMENT (BSHM)</string>
+    <string name="collegiateStatementTitleFifth">BACHELOR OF ELEMENTARY EDUCATION (BEEd) AND BACHELOR OF SECONDARY EDUCATION (BSED)</string>
+    <string name="collegiateStatementTitleSixth">BACHELOR OF ARTS IN ENGLISH LANGUAGE (AB)</string>
 </resources>
