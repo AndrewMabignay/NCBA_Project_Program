@@ -26,6 +26,10 @@
         <activity android:name=".Admission">
 
         </activity>
+
+        <activity android:name=".MainSnakeGame">
+
+        </activity>
     </application>
 
 </manifest>
