@@ -8,6 +8,6 @@ public class Admission extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admission_main);
+        setContentView(R.layout.admission_main_fragment);
     }
 }

@@ -40,16 +40,26 @@ public class MainFragment extends Fragment {
 
     private Fragment admissionFragment, academicFragment;
     private void AddInteraction() {
+        // 1. ADMISSION FRAGMENT
         admission.setOnClickListener(e -> {
-//            admissionFragment = new AdmissionFragment();
-//            requireActivity().getSupportFragmentManager().beginTransaction()
-//                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-//                    .replace(R.id.Main_Fragment_Container, admissionFragment)
-//                    .addToBackStack(null)
-//                    .commit();
+            if (admissionFragment == null) {
+                admissionFragment = new AdmissionFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, admissionFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
         });
 
-        // Academic Fragment
+        // 2. ACADEMIC FRAGMENT
         academics.setOnClickListener(e -> {
             if (academicFragment == null) {
                 academicFragment = new AcademicFragment();
