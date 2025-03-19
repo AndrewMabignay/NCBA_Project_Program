@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp"/>
+            <solid android:color="#55000000"/> <!-- Shadow Color (Transparent Black) -->
+        </shape>
+    </item>
+
+    <!-- Actual Image Background -->
+    <item android:top="4dp" android:left="4dp"> <!-- Para magmukhang may shadow -->
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp"/>
+            <solid android:color="@android:color/white"/> <!-- Background Color -->
+        </shape>
+    </item>
+</layer-list>
+

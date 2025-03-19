@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 
 public class AboutUsFragment extends Fragment {
+    private LinearLayout theInstitution, briefHistory, ncbaHymn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.about_us_main_fragment, container, false);
@@ -18,11 +20,69 @@ public class AboutUsFragment extends Fragment {
     }
 
     private void AddElement(View view) {
-
+        theInstitution = view.findViewById(R.id.TheInstitution);
+        briefHistory = view.findViewById(R.id.BriefHistory);
+        ncbaHymn = view.findViewById(R.id.NCBAHymn);
     }
 
+    private Fragment theInstitutionFragment, briefHistoryFragment, ncbaHymnFragment;
     private void AddInteraction() {
+        // 1. THE INSTITUTION
+        theInstitution.setOnClickListener(e -> {
+            if (theInstitutionFragment == null) {
+                theInstitutionFragment = new AboutUsTheInstitutionSubFragment();
+            }
 
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, theInstitutionFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        // 2. BRIEF HISTORY
+        briefHistory.setOnClickListener(e -> {
+            if (briefHistoryFragment == null) {
+                briefHistoryFragment = new AboutUsBriefHistorySubFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, briefHistoryFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        // 4. NCBA HYMN
+        ncbaHymn.setOnClickListener(e -> {
+            if (ncbaHymnFragment == null) {
+                ncbaHymnFragment = new AboutUsNCBAHymnSubFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, ncbaHymnFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
     }
 }
 

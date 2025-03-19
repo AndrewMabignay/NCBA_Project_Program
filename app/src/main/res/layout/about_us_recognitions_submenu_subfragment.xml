@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightWhite"
 >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="THE INSTITUTIONS"
+        android:text="RECOGNITIONS"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="23dp"
@@ -28,49 +29,39 @@
         android:nestedScrollingEnabled="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="25dp"
-        >
+    >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
         >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+            >
+                <ImageView
+                    android:id="@+id/ImagingSwitcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/doroteo"
+                    android:background="@drawable/rounded_shadow"
+                    android:visibility="visible"
+                    android:clickable="true"
+                    android:focusable="true"
+                />
+            </FrameLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:fontFamily="@font/poppins_medium"
-                android:lineHeight="28dp"
-                android:text="@string/aboutUsTheInstitutionStatementOne"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:justificationMode="inter_word"
-                android:textAlignment="viewStart"
-            />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:fontFamily="@font/poppins_medium"
-                android:layout_marginTop="20dp"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:text="@string/aboutUsTheInstitutionStatementTwo"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textAlignment="viewStart"
-            />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:fontFamily="@font/poppins_medium"
-                android:layout_marginTop="20dp"
-                android:justificationMode="inter_word"
-                android:lineHeight="28dp"
-                android:text="@string/aboutUsTheInstitutionStatementThree"
+                android:layout_marginTop="30dp"
+                android:text="@string/AboutUsBriefHistoryFirstStatement"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textAlignment="viewStart"
@@ -84,7 +75,76 @@
                 android:layout_marginTop="20dp"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:text="@string/aboutUsTheInstitutionStatementFour"
+                android:text="@string/AboutUsBriefHistorySecondStatement"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/AboutUsBriefHistoryThirdStatement"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/AboutUsBriefHistoryFourthStatement"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/AboutUsBriefHistoryFifthStatement"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/AboutUsBriefHistorySixthStatement"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/AboutUsBriefHistorySeventhStatement"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textAlignment="viewStart"

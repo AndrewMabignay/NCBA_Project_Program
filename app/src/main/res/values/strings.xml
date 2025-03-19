@@ -6,6 +6,92 @@
     <string name="headerStatementTwo">NATIONAL COLLEGE OF BUSINESS AND ARTS</string>
     <string name="headerStatementThree">Educating Globally Competitive Filipinos</string>
 
+    <!-- 1. ====================== ABOUT US PROGRAMS ====================== -->
+    <!-- 1.1. ====================== ABOUT US PROGRAMS | THE INSTITUTIONS ====================== -->
+    <string name="aboutUsTheInstitutionStatementOne">
+        As an institution of higher education, we are a teaching and learning community dedicated to the search for truth, the transmission of knowledge, and the appreciation of beauty.
+    </string>
+    <string name="aboutUsTheInstitutionStatementTwo">
+        National College of Business and Arts is committed to the education of the whole person – mind and heart, body and spirit. Our undergraduate programs are built on a core curriculum rooted in the liberal arts and business administration. Our curricula are balanced with career preparation and stress the importance of integrating knowledge, critical thinking, problem solving, communication, and aesthetic appreciation. Our graduate programs concentrate in the areas of professional studies which combine theory and practice. In addition to our academic programs, we are actively engaged with the local community in providing cultural, educational, and professional events.
+    </string>
+    <string name="aboutUsTheInstitutionStatementThree">
+        National College of Business and Arts attracts a student population with a broad range of backgrounds, abilities, and needs. We admit freshman, transferees, and graduate students. Some of our students are working fulltime who choose to study part-time by attending our night classes.
+    </string>
+    <string name="aboutUsTheInstitutionStatementFour">
+        For 50 years, NCBA has demonstrated an ability to adapt to changes in society. We remain flexible and innovative within the context of our mission/vision. Our future actions will remain focused on our commitment to the total development of our students as a whole person and become more involved with the local community. We will continue to renew and improve our programs and services so that our graduates will be well prepared to work in the twenty-first century.
+    </string>
+
+    <!-- 1.2. ====================== ABOUT US PROGRAMS | BRIEF HISTORY ====================== -->
+    <string name="AboutUsBriefHistoryFirstStatement">
+        In 1968, at the corner of R. Papa and Lepanto streets, between the two giants in Philippine private education (University of the East with its mammoth population of 65,000 and Far Eastern University with 47,000 enrollees), a small building was erected to house a small school – National College of Business and Arts (N.C.B.A).
+    </string>
+    <string name="AboutUsBriefHistorySecondStatement">
+        NCBA’s founder was the late Dr. Doroteo S. Pasion, a well-known educator (former Dean of Commerce of San Beda College, former CPA Review Director of the University of the East, and former President of PSBA), lawyer, accountant, author and civic leader. Dr. Pasion launched NCBA as a public service together with four others who believed in the NCBA concept: Col. Rafael Q. Yap-Diangco, Atty. Jose R. Torres, Mrs. Gloria C. Meñez and Mrs. Lourdes L. Sarabia.
+    </string>
+    <string name="AboutUsBriefHistoryThirdStatement">
+        Keeping to its founder’s vision, NCBA opted to remain as a specialized school and its growth sustained and steady through the years. From a small edifice along R. Papa Street, NCBA slowly expanded its academic programs and facilities with the single purpose of producing for the Nation the type of educated manpower it needs for national development.
+    </string>
+    <string name="AboutUsBriefHistoryFourthStatement">
+        When NCBA opened in 1968, its initial offerings were limited to the following courses: Bachelor of Science in Business Administration; Bachelor of Arts; a two-year course in Secretarial Administration; and its own CPA Review. The High School department was opened in School Year 1973-1974, followed by its additional offerings of short terminal courses in Cooperative; Salesmanship; Bookkeeping and Accounting; and Small Business Management in School Year 1974-1975.
+    </string>
+    <string name="AboutUsBriefHistoryFifthStatement">
+        Today, NCBA has a total of three campuses (Cubao, Taytay and Fairview) and boasts of a complete package of academic offerings from K-12 school to an expanded tertiary education program and graduate courses.
+    </string>
+    <string name="AboutUsBriefHistorySixthStatement">
+        The three campuses of NCBA are PACUCOA accredited for its BSBA program to attest that the College has formal recognition of an educational program possessing high level of quality based on the analysis of the merits of its educational operations in attaining its objectives and its role in the community that it serves.
+    </string>
+    <string name="AboutUsBriefHistorySeventhStatement">
+        Since its founding, NCBA has endeavored continually to perpetuate its educational policy to offer and provide both facilities and teaching force, a complete education for young men and women and equip them with the skills and training to become responsible citizens and future leaders of the country.
+    </string>
+
+    <!-- 1.3. ====================== ABOUT US PROGRAMS | VISION, MISSION AND CORE VALUES ====================== -->
+    <!-- 1.4. ====================== ABOUT US PROGRAMS | NCBA HYMN ====================== -->
+    <string name="AboutUsNCBAHymnFirstStatement">
+        Let’s stand erect, we’re proud that we are one\n
+        We will stay through the rain and sunshine!\n
+        Sing and sing the world will hear\n
+        The name we hold so very dear
+    </string>
+
+    <string name="AboutUsNCBAHymnSecondStatement">
+        N.C.B.A. Thy name shall ever live\n
+        Thy fame and greatness forever.\n
+        Shine, shine as a brilliant star\n
+        Shine brightly evermore
+    </string>
+
+    <string name="AboutUsNCBAHymnThirdStatement">
+        If your light shall ever become dim\n
+        We will stand beside thee as men\n
+        N.C.B.A.  N.C.B.A.\n
+        Thy name shall ever stay
+    </string>
+
+    <string name="AboutUsNCBAHymnFourthStatment">
+        Let’s stand erect, we’re proud that we are one\n
+        We will stay through the rain and sunshine!\n
+        Sing and sing the world will hear\n
+        The name we hold so very dear
+    </string>
+
+    <string name="AboutUsNCBAHymnFifthStatment">
+        N.C.B.A.  Thy name shall ever live\n
+        Thy fame and greatness forever.\n
+        Shine, shine as a brilliant star\n
+        Shine brightly evermore
+    </string>
+
+    <string name="AboutUsNCBAHymnSixthStatment">
+        If your light shall ever become dim\n
+        We will stand beside thee as men\n
+        N.C.B.A.  N.C.B.A.\n
+        Thy name shall ever stay\n
+        HURRAY!!!
+    </string>
+
+
+
+
     <!-- 2. ====================== ACADEMIC PROGRAMS ====================== -->
     <string name="academicStatementOne">
         Living up to its founder’s vision, NCBA has opted to remain as a specialized school and its growth measured and steady through the years. From that small edifice along R. Papa St. , NCBA gradually expanded its academic programs and facilities with the purpose of producing for the nation the type of educated manpower it needs for its development and well-being.

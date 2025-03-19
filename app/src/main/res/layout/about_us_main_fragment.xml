@@ -37,7 +37,7 @@
 
                 <!-- ========= 1. THE INSTITUTION ========= -->
                 <LinearLayout
-                    android:id="@+id/Admission"
+                    android:id="@+id/TheInstitution"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
