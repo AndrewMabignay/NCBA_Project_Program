@@ -1,6 +1,7 @@
 package com.example.ncba_project_program;
 
 import android.content.Intent;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,8 +30,9 @@ public class AdmissionFragment extends Fragment {
         credentials = view.findViewById(R.id.Credentials);
     }
 
-    private Fragment admissionPaymentOptions, admissionEnrollmentProcedure, admissionGraduateStudies, admissionScholarshipDiscount, admissionCredentials;
+    private Fragment admissionPaymentOptions, admissionEnrollmentProcedure, admissionGraduateStudies, admissionCollege, admissionScholarshipDiscount, admissionCredentials;
     private void AddInteraction() {
+        // 1. PAYMENT OPTIONS __________________________
         paymentOptions.setOnClickListener(e -> {
             if (admissionPaymentOptions == null) {
                 admissionPaymentOptions = new AdmissionPaymentOptionsSubFragment();
@@ -49,6 +51,25 @@ public class AdmissionFragment extends Fragment {
                     .commit();
         });
 
+        // 2. ENROLLMENT PROCEDURES __________________________
+        enrollmentProcedure.setOnClickListener(e -> {
+            if (getActivity() == null) return; // ✅ Prevents null context issues
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            LayoutInflater inflater = LayoutInflater.from(getContext()); // ✅ Ensures correct layout inflater
+            View dialogMPAView = inflater.inflate(R.layout.academic_graduate_program_dialog_mpa_submenu, null);
+            builder.setView(dialogMPAView);
+
+            AlertDialog dialogMPA = builder.create();
+
+            if (dialogMPA.getWindow() != null) {
+                dialogMPA.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+                dialogMPA.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+            }
+        });
+
+
+        // 3. GRADUATE STUDIES __________________________
         graduateStudies.setOnClickListener(e -> {
             if (admissionGraduateStudies == null) {
                 admissionGraduateStudies = new AdmissionGraduateStudiesSubFragment();
@@ -62,6 +83,25 @@ public class AdmissionFragment extends Fragment {
                             R.anim.slide_out_right_to_left  // Pop exit (Backstack)
                     )
                     .replace(R.id.Main_Fragment_Container, admissionGraduateStudies)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        // 4. COLLEGE __________________________
+        college.setOnClickListener(e -> {
+            if (admissionCollege == null) {
+                admissionCollege = new AdmissionCollegeSubFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, admissionCollege)
                     .setReorderingAllowed(true)
                     .addToBackStack(null)
                     .commit();
@@ -87,7 +127,7 @@ public class AdmissionFragment extends Fragment {
 
         credentials.setOnClickListener(e -> {
             if (admissionCredentials == null) {
-                admissionCredentials = new AdmissionScholarshipDiscountSubFragment();
+                admissionCredentials = new AdmissionCredentialsSubFragment();
             }
 
             requireActivity().getSupportFragmentManager().beginTransaction()

@@ -193,10 +193,40 @@
         • Certificate of Transfer Credential\n• Birth Certificate – original and photocopy\n• Recommendation letters\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope with stamps (long)
     </string>
 
+    <string name="graduateStudiesStatementThree">
+        • Certificate of Transfer Credential\n• Scholastic Record / Certificate of Grades\n• Birth Certificate – original and photocopy\n• 2 Recommendation letters\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope with stamps (long)
+    </string>
 
+    <string name="graduateStudiesStatementFour">
+        • Permit to Cross-enroll\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope with stamps (long)
+    </string>
+
+    <string name="graduateStudiesStatementFive">
+        A graduate student will be eligible for the awarding of an MBA/MPA degree upon satisfactory completion of the following:
+    </string>
+
+    <string name="graduateStudiesStatementSix">
+        • Completion of the basic, major and cognate courses as prescribed in the curriculum\n• A final grade of at least 2.0 in all courses taken\n• Passing of the comprehensive exam\n• Passing of the panel oral defense (for Thesis program)\n• Minimum residency of two (2) trimesters or must have earned at least twenty four (24) units of credit from NCBA
+    </string>
 
 
     <!-- 3.4. ====================== ADMISSION PROGRAMS | COLLEGE ADMISSION ====================== -->
+    <string name="collegeStatementOne">
+        Admission is open to all Senior High School graduates who meet all the requirements necessary for registration.
+    </string>
+
+    <string name="collegeStatementTwo">
+        • Report Card (Form 138 / SF 10)\n• Certificate of Good Moral Character\n• Birth Certificate – original and photocopy\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope (long) with stamps
+    </string>
+
+    <string name="collegeStatementThree">
+        • Certificate of Transfer Credential\n• Scholastic Record / Certificate of Grades\n• Certificate of Good Moral Character\n• Birth Certificate – original and photocopy\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope (long) with stamps
+    </string>
+
+    <string name="collegeStatementFour">
+        • Permit to Cross-enroll\n• Certificate of Good Moral Character (if cross-enrollee from another school)\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope (long) with stamps
+    </string>
+
 
     <!-- 3.5. ====================== ADMISSION PROGRAMS | SCHOLARSHIPS AND DISCOUNTS ====================== -->
     <string name="scholarshipDiscountsFirstStatement">
@@ -204,64 +234,52 @@
     </string>
 
     <string name="scholarshipDiscountsSecondStatement">
-        To apply for a scholarship, pls go to the Registrar’s Office for processing of your application.  Deadline for submission is on the last day of enrollment.
+        For bonafide students with a General Weighted Average (GWA) of not lower than 1.20 and 1.30 and must:
     </string>
 
     <string name="scholarshipDiscountsThirdStatement">
-        COLLEGE \n
-
-        For bonafide students with a General Weighted Average (GWA) of not lower than 1.20 and 1.30 and must: \n
-
-        • Be enrolled in full load of academic units as prescribed in the curriculum; \n
-        • Have no grade lower than 2.0 for full scholar and 2.5 for partial scholar in any academic and/or non-academic courses; \n
-        • Have no “dropped” remark in any course previously enrolled
+        • Be enrolled in full load of academic units as prescribed in the curriculum;\n• Have no grade lower than 2.0 for full scholar and 2.5 for partial scholar in any academic and/or non-academic courses;\n• Have no “dropped” remark in any course previously enrolled
     </string>
+
+    <string name="scholarshipDiscountsFourthStatement">
+        To apply for a scholarship, pls go to the Registrar’s Office for processing of your application. Deadline for submission is on the last day of enrollment.
+    </string>
+
+    <string name="scholarshipDiscountsFifthStatement">
+        In accordance with the existing guidelines as provided for under PD #577, scholarship is granted to the dependants of military personnel.
+    </string>
+
+    <string name="scholarshipDiscountsSixthStatement">
+        Other government funded scholarships provided by the PVAO, CHED, DEPED and LGUs are also available for eligible applicants.
+    </string>
+
+    <string name="scholarshipDiscountsSeventhStatement">
+        To apply for a scholarship, pls go to the Registrar’s Office for processing of your application. Deadline for submission is on the last day of enrollment.
+    </string>
+
+    <string name="scholarshipDiscountsEightStatement">
+        Incentives are given to families with at least three siblings simultaneously enrolled at NCBA. Incentives are in the form of credit adjustments applied on the student accounts.
+    </string>
+
+
 
     <!-- 3.6. ====================== ADMISSION PROGRAMS | CREDENTIALS ====================== -->
-    <string name="credentialsTitle">
-        PROCEDURES TO SECURE TRANSCRIPT OF RECORD (TOR) / DIPLOMA / TRANSFER CREDENTIAL / CERTIFICATION
-    </string>
-
     <string name="credentialsFirstStatement">
-
-         • Get an application form at the Registrar’s Office and fill it out completely.\n
-        • Secure clearance from the Registrar’s Office, Finance and Library.\n
-        • Pay the corresponding fee/s at the Finance Office.\n
-        • Present your official receipt at the Registrar’s Office to get a claim stub.
+        • Get an application form at the Registrar’s Office and fill it out completely.\n• Secure clearance from the Registrar’s Office, Finance and Library.\n• Pay the corresponding fee/s at the Finance Office.\n• Present your official receipt at the Registrar’s Office to get a claim stub.
     </string>
-
-<!--    <string-array name="credentialsFirstStatementArray">-->
-<!--        <item>1. Get an application form at the Registrar’s Office and fill it out completely.</item>-->
-<!--        <item>2. Secure clearance from the Registrar’s Office, Finance and Library.</item>-->
-<!--        <item>3. Pay the corresponding fee/s at the Finance Office.</item>-->
-<!--        <item>4. Present your official receipt at the Registrar’s Office to get a claim stub.</item>-->
-<!--    </string-array>-->
-
-    <string-array name="credentialsFirstStatementArray">
-        <item>Kumuha ng application form sa Registrar’s Office at punan ito nang kumpleto.</item>
-        <item>Siguraduhin ang clearance mula sa Registrar’s Office, Finance, at Library.</item>
-        <item>Bayaran ang kaukulang fee sa Finance Office.</item>
-        <item>Ipakita ang resibo sa Registrar’s Office upang makuha ang claim stub.</item>
-    </string-array>
-
 
     <string name="credentialsSecondStatement">
         For those working or living abroad, the owner of the record must provide an authorization letter to his/her designated representative who will be responsible for applying in his/her behalf. The letter must indicate the following information:
     </string>
 
     <string name="credentialsThirdStatement">
-        • Identity and personal circumstances of the owner of the record, including but not limited to, name, date of birth, course/program, period of stay in school, date of graduation, if applicable.\n
-        • Complete name of the representative and the relationship to the owner of the record.\n
-        • Specify document being applied for, number of copies and purpose for the document /s sought.
+        • Identity and personal circumstances of the owner of the record, including but not limited to, name, date of birth, course/program, period of stay in school, date of graduation, if applicable.\n• Complete name of the representative and the relationship to the owner of the record.\n• Specify document being applied for, number of copies and purpose for the document /s sought.
     </string>
 
     <string name="credentialsFourthStatement">
         Both owner of the record and the representative must present sufficient proof of identity by presenting signed copies of at least two valid IDs when applying for any type of document.
     </string>
 
-    <string name="credentialsTitleTwo">
-        CORRECTION OF PERSONAL INFORMATION
-    </string>
 
     <string name="credentialsTwoFirstStatement">
         PROCEDURES IN FILING AN APPLICATION FOR A CORRECTION OF NAME, DATE OF BIRTH, PLACE OF BIRTH OR OTHER PERTINENT INFORMATION
@@ -276,7 +294,7 @@
     </string>
 
     <string name="credentialsTwoFourthStatement">
-        • Letter of Request (form is available at the Registrar ‘s office) \n• Personal affidavit\n• Affidavit from two disinterested persons – this involves people who know the student personally, but are not related to him/her.
+        • Letter of Request (form is available at the Registrar ‘s office)\n• Personal affidavit\n• Affidavit from two disinterested persons – this involves people who know the student personally, but are not related to him/her.
     </string>
 
     <string name="credentialsTwoFifthStatement">
