@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightWhite"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GRADUATE STUDIES ADMISSION"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:letterSpacing="0.03"
+        android:layout_marginBottom="20dp"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="5dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="25dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/graduateStudiesStatementOne"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingBottom="20dp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADMISSION REQUIREMENTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"> <!-- Optional margin for spacing -->
+
+                <!-- Left Separator Line -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/DarkGreen"
+                    android:layout_marginHorizontal="20dp"
+                />
+
+                <!-- Text in the Center -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WALK-IN APPLICANT"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:background="@drawable/shadow_subheader_box_second"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="30dp"
+                    android:letterSpacing="0.03"
+                    android:lineHeight="33dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    />
+
+                <!-- Right Separator Line -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/DarkGreen"
+                    android:layout_marginHorizontal="20dp"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:lineHeight="30dp"
+                android:text="@string/graduateStudiesStatementTwo"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

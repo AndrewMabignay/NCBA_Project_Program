@@ -175,8 +175,27 @@
     <string name="collegiateStatementTitleSixth">BACHELOR OF ARTS IN ENGLISH LANGUAGE (AB)</string>
 
     <!-- 3.1. ====================== ADMISSION PROGRAMS | PAYMENT OPTIONS ====================== -->
+    <string name="paymentOptionsStatementOne">
+        Please be informed that at present, only payments made at the Finance Office of your respective NCBA Campus will be accepted. Until further notice, we have discontinued receiving payments via bank transfers or over the counter bank transactions.
+    </string>
+
+    <string name="paymentOptionsStatementTwo">
+        Please contact the Finance Office for queries. Thank you for your cooperation.
+    </string>
+
     <!-- 3.2. ====================== ADMISSION PROGRAMS | ENROLLMENT PROCEDURES ====================== -->
     <!-- 3.3. ====================== ADMISSION PROGRAMS | GRADUATE STUDIES ADMISSION ====================== -->
+    <string name="graduateStudiesStatementOne">
+        Admission is open to holders of a bachelor’s degree in any field of discipline from a college/university.  Applicants must satisfactorily complete the admission requirements for graduate study as shown below:
+    </string>
+
+    <string name="graduateStudiesStatementTwo">
+        • Certificate of Transfer Credential\n• Birth Certificate – original and photocopy\n• Recommendation letters\n• 2 pcs 2×2 ID picture\n• 2 pcs letter envelope with stamps (long)
+    </string>
+
+
+
+
     <!-- 3.4. ====================== ADMISSION PROGRAMS | COLLEGE ADMISSION ====================== -->
 
     <!-- 3.5. ====================== ADMISSION PROGRAMS | SCHOLARSHIPS AND DISCOUNTS ====================== -->

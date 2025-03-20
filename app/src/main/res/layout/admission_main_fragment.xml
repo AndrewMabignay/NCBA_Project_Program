@@ -1,35 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
->
-    <LinearLayout
+    >
+    <!-- Your Main Content Here -->
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-    >
-        <LinearLayout
-            android:id="@+id/ScholarshipDiscount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
         >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Scholarship and Discounts"
-            />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ncba_taytay"
+            android:scaleType="centerCrop"
+            android:tint="#990d4f20"
+            tools:ignore="UseAppTint"
+        />
 
         <LinearLayout
-            android:id="@+id/Credentials"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-            <TextView
-                android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+        >
+
+            <!-- ============================= FIRST ROW ============================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Credentials"
-            />
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+            >
+
+                <!-- ========= 1. PAYMENT OPTIONS ========= -->
+                <LinearLayout
+                    android:id="@+id/PaymentOptions"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="30dp"
+                    android:layout_gravity="center"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf09d"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAYMENT OPTIONS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                    />
+                </LinearLayout>
+
+                <!-- ========= 2. ENROLLMENT PROCEDURE ========= -->
+                <LinearLayout
+                    android:id="@+id/EnrollmentProcedure"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf234"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENROLLMENT PROCEDURE"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============================= SECOND ROW ============================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="25dp"
+            >
+
+                <!-- ========= 3. GRADUATE STUDIES ADMISSION ========= -->
+                <LinearLayout
+                    android:id="@+id/GraduateStudiesAdmission"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf19d"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GRADUATE STUDIES ADMISSION"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                    />
+                </LinearLayout>
+
+                <!-- ========= 4. COLLEGE ADMISSION ========= -->
+                <LinearLayout
+                    android:id="@+id/CollegeAdmission"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf19c"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COLLEGE ADMISSION"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============================= THIRD ROW ============================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="25dp"
+            >
+
+                <!-- ========= 5. RECOGNITION ========= -->
+                <LinearLayout
+                    android:id="@+id/ScholarshipDiscount"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf02c"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SCHOLARSHIPS AND DISCOUNTS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                    />
+                </LinearLayout>
+
+                <!-- ========= 6. CAREER ========= -->
+                <LinearLayout
+                    android:id="@+id/Credentials"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf70e"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CREDENTIALS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                    />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </FrameLayout>
 </LinearLayout>
