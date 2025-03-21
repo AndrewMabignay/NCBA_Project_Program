@@ -137,18 +137,18 @@
         android:layout_width="250dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#333"
+        android:background="#E0E0E0"
         android:orientation="vertical"
-        android:padding="16dp">
+    >
 
 
-        <ImageButton
-            android:id="@+id/closeDrawer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_close_clear_cancel"
-            android:contentDescription="Close Drawer"
-        />
+<!--        <ImageButton-->
+<!--            android:id="@+id/closeDrawer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@android:drawable/ic_menu_close_clear_cancel"-->
+<!--            android:contentDescription="Close Drawer"-->
+<!--        />-->
 
 
         <!-- Manually Add Navigation Items Here -->
@@ -156,12 +156,330 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:orientation="vertical"
         >
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- NAVIGATION DRAWER HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ADMISSION"
-            />
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+            >
+                <!-- =============== HEADER =============== -->
+                <FrameLayout
+                    android:id="@+id/HeadeNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ncba_background"
+                        android:scaleType="centerCrop"
+                    />
+
+                    <!-- FIELDS -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="20dp"
+                    >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ncba_logo"
+                            android:layout_marginLeft="10dp"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp"
+                        >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/headerStatementTwo"
+                                android:textSize="12sp"
+                                android:textColor="@color/lightGreen"
+                                android:fontFamily="@font/poppins_medium"
+                                android:layout_marginBottom="3dp"
+                                android:lineHeight="25dp"
+                                android:layout_marginLeft="5dp"
+                            />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- ================== 1. HOME ================== -->
+            <LinearLayout
+                android:id="@+id/HomeNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf015"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
+
+            <!-- ================== 2. ADMISSIONS ================== -->
+            <LinearLayout
+                android:id="@+id/AdmissionNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf19c"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admission"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
+
+            <!-- ================== 3. ACADEMICS ================== -->
+            <LinearLayout
+                android:id="@+id/AcademicNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf02d"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Academics"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
+
+            <!-- ================== 4. ABOUT US ================== -->
+            <LinearLayout
+                android:id="@+id/AboutUsNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf0c0"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
+
+            <!-- ================== 5. CONTACT US ================== -->
+            <LinearLayout
+                android:id="@+id/ContactUsNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf095"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
+
+            <!-- ================== 6. WEB MASTER ================== -->
+            <LinearLayout
+                android:id="@+id/WebMasterNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf5fc"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web Master"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
+
+            <!-- ================== 7. ENTERTAINMENT ================== -->
+            <LinearLayout
+                android:id="@+id/EntertainmentNav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                >
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="\uf091"
+                    android:fontFamily="@font/font_awesome_6_free_solid_900"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entertainment"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginHorizontal="12dp"
+                    android:letterSpacing="0.03"
+                    android:textColor="@color/MuchDarkerGreen"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

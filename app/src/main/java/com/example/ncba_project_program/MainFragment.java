@@ -30,7 +30,7 @@ public class MainFragment extends Fragment {
         console = view.findViewById(R.id.Game);
     }
 
-    private Fragment admissionFragment, academicFragment, aboutUsFragment;
+    private Fragment admissionFragment, academicFragment, aboutUsFragment, contactUsFragment;
     private void AddInteraction() {
         // 1. ADMISSION FRAGMENT
         admission.setOnClickListener(e -> {
@@ -89,12 +89,29 @@ public class MainFragment extends Fragment {
                     .commit();
         });
 
+        // 4. CONTACT US
+        contactUs.setOnClickListener(e -> {
+            if (contactUsFragment == null) {
+                contactUsFragment = new ContactUsFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, contactUsFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
         console.setOnClickListener(e -> {
             Intent intent = new Intent(getActivity(), MainSnakeGame.class);
             startActivity(intent);
         });
-
-
     }
 
 

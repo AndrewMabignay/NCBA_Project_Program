@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightWhite"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp"
+        android:letterSpacing="0.03"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:nestedScrollingEnabled="true"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <!-- 1. ==================== TELEPHONE DIRECTORY ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TELEPHONE DIRECTORY"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+            >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cubao Campus"
+                    android:textAlignment="center"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fairview Campus"
+                    android:textAlignment="center"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Taytay Campus"
+                    android:textAlignment="center"
+                />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsFirstStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="40dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsSecondStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginBottom="20dp"
+            />
+
+
+            <!-- 2. ==================== ACADEMIC SCHOLARSHIP / DISCOUNTS ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACADEMIC SCHOLARSHIP / DISCOUNTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"> <!-- Optional margin for spacing -->
+
+                <!-- Left Separator Line -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/DarkGreen"
+                    android:layout_marginHorizontal="20dp"
+                />
+
+                <!-- Text in the Center -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COLLEGE"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:background="@drawable/shadow_subheader_box_second"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="30dp"
+                    android:letterSpacing="0.03"
+                    android:lineHeight="33dp"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                />
+
+                <!-- Right Separator Line -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/DarkGreen"
+                    android:layout_marginHorizontal="20dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsSecondStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsThirdStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsFourthStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginBottom="20dp"
+            />
+
+            <!-- 3. ==================== OTHER SCHOLARSHIPS ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTHER SCHOLARSHIPS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="PD #577 – AFP EDUCATIONAL BENEFIT"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginBottom="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsFifthStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="PVAO, CHED, DEPED &amp; LGUs FUNDED SCHOLARSHIPS"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsSixthStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsSeventhStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginBottom="20dp"
+            />
+
+
+            <!-- 4. ==================== DISCOUNTS ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DISCOUNTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="@string/scholarshipDiscountsEightStatement"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="(For more information, please inquire at the Finance Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginBottom="20dp"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

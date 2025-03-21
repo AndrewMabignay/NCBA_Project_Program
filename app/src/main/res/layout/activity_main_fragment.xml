@@ -140,7 +140,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="\uf05a"
+                        android:text="\uf0c0"
                         android:textColor="@color/white"
                         android:fontFamily="@font/font_awesome_6_free_solid_900"
                         />
@@ -169,14 +169,14 @@
                     android:padding="20dp"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    >
+                >
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\uf095"
                         android:fontFamily="@font/font_awesome_6_free_solid_900"
                         android:textColor="@color/lightWhite"
-                        />
+                    />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -211,14 +211,14 @@
                     android:background="@drawable/home_button"
                     android:padding="20dp"
                     android:layout_weight="1"
-                    >
+                >
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="\uf5fc"
                         android:textColor="@color/white"
                         android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        />
+                    />
 
                     <TextView
                         android:layout_width="wrap_content"
