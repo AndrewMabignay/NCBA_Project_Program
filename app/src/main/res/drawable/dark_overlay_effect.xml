@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Kapag naka-click (pressed) -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#40000000"/> <!-- 25% Black Opacity -->
+            <corners android:radius="12dp"/> <!-- Rounded Corners -->
+            <stroke android:width="3dp" android:color="@color/DarkGreen"/> <!-- Green Border -->
+        </shape>
+    </item>
+
+    <!-- Default Dark Opacity -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80000000"/> <!-- 50% Black Opacity -->
+            <corners android:radius="12dp"/> <!-- Rounded Corners -->
+            <stroke android:width="3dp" android:color="@color/lightGreen"/> <!-- White Border -->
+        </shape>
+    </item>
+</selector>
