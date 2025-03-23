@@ -10,7 +10,7 @@
         android:text="COLLEGIATE PROGRAMS"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="23dp"
+        android:textSize="17dp"
         android:background="@drawable/shadow_subheader_box"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:scrollbarThumbVertical="@drawable/custom_scrollbar"
         android:fadeScrollbars="false"
-        android:scrollbarSize="5dp"
+        android:scrollbarSize="2dp"
         android:nestedScrollingEnabled="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="25dp"
@@ -32,113 +32,435 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+
+            android:paddingHorizontal="20dp"
         >
-            <TextView
+
+            <!-- _____________________ 1. ACCOUNTING _____________________ -->
+            <LinearLayout
                 android:id="@+id/Accountancy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collegiateStatementTitleFirst"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-            />
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                >
+                    <ImageView
+                        android:id="@+id/AccountingBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/accounting_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                    />
 
-            <TextView
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf1ec"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BSA and BSMA"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 2. BUSINESS AD _____________________ -->
+            <LinearLayout
                 android:id="@+id/BusinessAdministration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collegiateStatementTitleSecond"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-            />
+                android:layout_marginTop="15dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/BusinessAdministrationBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/business_ad_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                        />
 
-            <TextView
-                android:id="@+id/InformationAndComputerScience"
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf1ad"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BSBA"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 3. COMPUTER SYSTEM _____________________ -->
+            <LinearLayout
+                android:id="@+id/ComputerSystem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collegiateStatementTitleThird"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-            />
+                android:layout_marginTop="15dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/ComputerSystemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/computer_system_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                        />
 
-            <TextView
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf108"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BSIS and BSCS"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 4. HOSPITALITY MANAGEMENT _____________________ -->
+            <LinearLayout
                 android:id="@+id/HospitalityManagement"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collegiateStatementTitleFourth"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-            />
+                android:layout_marginTop="15dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/HospitalityManagementBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hospitality_management_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                        />
 
-            <TextView
-                android:id="@+id/ElementaryEducation"
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf594"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BSHM"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 5. EDUC _____________________ -->
+            <LinearLayout
+                android:id="@+id/TeacherEducation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collegiateStatementTitleFifth"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-            />
+                android:layout_marginTop="15dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/TeacherEducationBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/education_teacher_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                        />
 
-            <TextView
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf518"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BEEd and BSEd"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 6. ENGLISH LANGUAGE _____________________ -->
+            <LinearLayout
                 android:id="@+id/EnglishLanguage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/collegiateStatementTitleSixth"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-            />
+                android:layout_marginTop="15dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/EnglishLanguageBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/english_language_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf0ac"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AB"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
         </LinearLayout>
     </ScrollView>
 

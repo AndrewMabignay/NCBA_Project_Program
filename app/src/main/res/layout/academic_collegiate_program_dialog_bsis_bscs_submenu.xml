@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_dialog"
+>
+    <!-- CLOSE BUTTON -->
+    <LinearLayout
+        android:id="@+id/CloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#xf177;"
+            android:textSize="14sp"
+            android:textColor="@color/slightDarkGreen"
+            android:fontFamily="@font/font_awesome_6_free_solid_900"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textSize="14sp"
+            android:textColor="@color/slightDarkGreen"
+            android:fontFamily="@font/poppins_semibold"
+        />
+    </LinearLayout>
+
+    <!-- CONTENTS -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="25dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!-- MASTER IN BUSINESS ADMINISTRATION (MBA) [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BS Information System (BSIS) and BS Computer Science (BSCS)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <!-- THRUST: EXPERTISE IN INFORMATION NETWORK [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thrust: Expertise in Information Network"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementOneComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementTwoComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementThreeComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+
+            <!-- 1. HOW DOES THE BS IN COMPUTER SCIENCE INCORPORATE PRACTICAL LEARNING [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How does the BS in Computer Science incorporate practical learning?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementFourComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+
+            <!-- 2. WHAT DOES THE BS IN COMPUTER SCIENCE OFFER [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What does the BS in Computer Science offer?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementFiveComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <!-- 3. WHAT ARE THE KEY AREAS OF STUDY COVERED IN THE BS IN COMPUTER SCIENCE [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WHAT ARE THE KEY AREAS OF STUDY COVERED IN THE BS IN COMPUTER SCIENCE?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementSixComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementSevenComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <!-- 4. HOW DOES THE BS IN COMPUTER SCIENCE PREPARE GRADUATES FOR SUCCESS IN LOCAL AND GLOBAL BUSINESS LANDSCAPES [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How does the BS in Computer Science prepare graduates for success in local and global business landscapes?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementEightComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementNineComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <!-- 5. HOW DOES THE BS IN INFORMATION SYSTEMS INCORPORATE PRACTICAL LEARNING [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How does the BS in information Systems incorporate practical learning?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementTenComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <!-- 6. WHAT DOES THE BS IN INFORMATION SYSTEMS OFFER [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What does the BS in information Systems offer?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementElevenComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <!-- 7. WHAT ARE THE KEY AREAS OF STUDY COVERED IN THE BS IN INFORMATION SYSTEMS [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are the key areas of study covered in the BS in information Systems?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementElevenComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <!-- 8. HOW DOES THE BS IN INFORMATION SYSTEMS PREPARE GRADUATES FOR SUCCESS IN LOCAL AND GLOBAL BUSINESS LANDSCAPES [TITLE] -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How does the BS in Information Systems prepare graduates for success in local and global business landscapes?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/collegiateStatementThirteenComputerScience"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

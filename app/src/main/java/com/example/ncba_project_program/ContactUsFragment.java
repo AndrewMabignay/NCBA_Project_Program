@@ -56,20 +56,20 @@ public class ContactUsFragment extends Fragment {
             }
         });
 
-        ncbaFairview = view.findViewById(R.id.ncbaFairview);
-        ncbaFairview.setClipToOutline(true);
-        ncbaFairview.setOutlineProvider(new ViewOutlineProvider() {
-            @Override
-            public void getOutline(View view, Outline outline) {
-                int radius = 28;
-                outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
-            }
-        });
-
-        webView = view.findViewById(R.id.webView);
-        webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setDomStorageEnabled(true);
+//        ncbaFairview = view.findViewById(R.id.ncbaFairview);
+//        ncbaFairview.setClipToOutline(true);
+//        ncbaFairview.setOutlineProvider(new ViewOutlineProvider() {
+//            @Override
+//            public void getOutline(View view, Outline outline) {
+//                int radius = 28;
+//                outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
+//            }
+//        });
+//
+//        webView = view.findViewById(R.id.webView);
+//        webSettings = webView.getSettings();
+//        webSettings.setJavaScriptEnabled(true);
+//        webSettings.setDomStorageEnabled(true);
 
 //        // Check internet connection
 //        if (isInternetAvailable()) {

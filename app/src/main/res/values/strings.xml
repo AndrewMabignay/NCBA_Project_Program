@@ -166,8 +166,152 @@
         •  Cognate Course (12 units)
     </string>
 
-    <!-- 2.2. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS ====================== -->
-    <string name="collegiateStatementTitleFirst">BS ACCOUNTANCY (BSA) AND BS MANAGEMENT ACCOUNTING (BSMA)</string>
+    <!-- 2.2.1. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | ACCOUNTING ====================== -->
+    <string name="collegiateStatementOneAccounting">
+        Our curriculum is designed to provide students with the technical accounting knowledge and skills, and with the integration of professional values and work ethics that are essential to meet the rapidly changing demands and challenges of the accounting profession.
+    </string>
+
+    <string name="collegiateStatementTwoAccounting">
+        Accounting continues to be a field with one of the highest demands for graduates. To meet this demand, the program has the following objectives:
+    </string>
+
+    <string name="collegiateStatementThreeAccounting">
+        •  Provide students with the knowledge and tools needed to obtain meaningful employment and have successful career in the accounting field.
+    </string>
+
+    <string name="collegiateStatementFourAccounting">
+        •  Employ critical-thinking, analytical, and problem-solving skills to resolve complex business and accounting issues.
+    </string>
+
+    <string name="collegiateStatementFiveAccounting">
+        •  Provide students the educational requirements of various professional accounting certification examinations.
+    </string>
+
+    <string name="collegiateStatementSixAccounting">
+        •  Identify the appropriate managerial and business issues critical in analyzing accounting data and other information used for identifying and assessing opportunities and risks, developing organizational plans, allocating resources, and accomplishing objectives.
+    </string>
+
+    <string name="collegiateStatementSevenAccounting">
+        •  Apply relevant accounting principles and standards to specific business activities and workplace situations.
+    </string>
+
+    <string name="collegiateStatementEightAccounting">
+        •  Employ national, international, and historical perspectives to analyze accounting and business issues.
+    </string>
+
+    <string name="collegiateStatementNineAccounting">
+        •  Identify ethical issues associated with accounting and business situations and apply appropriate principles of ethics and civic responsibility.
+    </string>
+
+    <string name="collegiateStatementTenAccounting">
+        •  Use analytical and research tools to monitor evolving accounting standards and practices and to maintain professional skills in a changing business environment.
+    </string>
+
+    <string name="collegiateStatementElevenAccounting">
+        •  Apply the interpersonal and leadership skills expected of today’s accounting professional.
+    </string>
+
+
+    <!-- 2.2.2. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | BUSINESS ADMINISTRATION ====================== -->
+    <string name="collegiateStatementOneBusinessAd">
+        •  This program of study is an integration of the basic business, core business and professional courses that are geared towards developing our students to become effective business leaders in the future. The program’s thrust is to focus their study in one of the four areas, namely: Human Resource Development Management, Financial Management, Marketing Management and Operations Management.
+    </string>
+
+    <string name="collegiateStatementTwoBusinessAd">
+        •  Upon completion of the program, our students can successfully pursue careers in the public and private sectors. This degree program is also designed to complement the graduate business programs such as, Masters in Business Administration (M.B.A.).
+    </string>
+
+    <!-- 2.2.3. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | COMPUTER SCIENCE ====================== -->
+    <string name="collegiateStatementOneComputerScience">
+        The BSIS/BSCS degree programs aim to produce Information Technology (IT) professionals with specialized skills catering to the needs of the I.T. industry. These programs primarily cover a wide range of learning that includes Computer Programming using different kinds of computer programming languages from 2nd Generation to 3rd Generation’s Object Oriented Programming; Systems Analysis and Design, Object Oriented Analysis tool for the improvement of business Information System; Sofware Engineering and systems integration into a multi-platform environment.
+    </string>
+
+    <string name="collegiateStatementTwoComputerScience">
+        The program aims to develop its students with the appropriate industry standards closed and open source systems and enough skills in application-oriented environment, Integrated Development Environment Web Application programming with integration of Content Management Systems(CMS) via open source implementation, large scale database development, networking application and administration in a multi and crossed platform environment, and network planning and managements.
+    </string>
+
+    <string name="collegiateStatementThreeComputerScience">
+        While the course of practice is done independently, there are numerous opportunities to develop teamwork skills with group based projects throughtout the course. The students will apply their knowledge in academic theory and system development by completing an industry-based project in order to expose and train them to work in a professional environment.
+    </string>
+
+
+
+    <string name="collegiateStatementFourComputerScience">
+        Computer science programs integrate practical learning in various ways to ensure students gain hands-on experience and develop real-world skills. By incorporating these practical learning opportunities into the curriculum, computer science programs ensure that students not only grasp theoretical concepts but also develop the skills, confidence, and adaptability needed to succeed in the dynamic field of computing.
+    </string>
+
+
+    <string name="collegiateStatementFiveComputerScience">
+        A computer science program provides a comprehensive curriculum to prepare students for careers in technology and computing. It covers theoretical knowledge and practical skills, preparing students for diverse opportunities in fields like Software Engineering. Cybersecurity, Artificial Intelligence, and Programming Languages.
+    </string>
+
+
+    <string name="collegiateStatementSixComputerScience">
+        Computer Science covers a wide range of key areas of study, each essential for understanding and working in the field of computing and the field continues to evolve with advancements in technology and new research areas emerging over time.
+    </string>
+
+    <string name="collegiateStatementSevenComputerScience">
+        Some of the following areas focuses on Theory Computation, Data Structures and Algorithm, Distributed Systems and Cloud Computing.
+    </string>
+
+
+    <string name="collegiateStatementEightComputerScience">
+        Computer Science program equips graduates for success both locally and globally by providing them with a robust skill set, adaptable mindset, and a deep understanding of foundational principles that transcend geographical boundaries.
+    </string>
+
+    <string name="collegiateStatementNineComputerScience">
+        By equipping graduates with technical expertise, problem-solving skills, cross-cultural communication abilities, adaptability, ethical awareness, and a global perspective, Computer Science programs prepare them to thrive in a rapidly changing world, whether they pursue opportunities in their local communities or embark on global careers.
+    </string>
+
+    <string name="collegiateStatementTenComputerScience">
+        Information systems programs integrate practical learning in several ways to provide students with hands-on experience and prepare them for careers in the field. By integrating practical learning opportunities into the curriculum, information systems programs ensure that students not only understand theoretical concepts but also gain the hands-on experience and practical skills necessary to succeed in the field of information systems.
+    </string>
+
+    <string name="collegiateStatementElevenComputerScience">
+        Information systems program provides students with a solid foundation in both technical and business aspects of information technology, preparing them for careers in areas such as business analysis, systems analysis, project management, information security, and database administration. Its multidisciplinary curriculum covers Business Analysis, System Design, Database Management, and Data Analytics.
+    </string>
+
+    <string name="collegiateStatementTwelveComputerScience">
+        Information Systems program covers a diverse range of key areas that integrate business knowledge with technology solutions. These key areas of study in Information Systems prepare students for careers in areas such as Enterprise System, Information Security and Risk Management, IT consulting, IT Governance and compliance, where they can leverage technology to support organizational objectives and drive innovation.
+    </string>
+
+    <string name="collegiateStatementThirteenComputerScience">
+        Information Systems program equips graduates for success in both local and global contexts by providing them with a blend of technical, business, and interpersonal skills that are highly valued in today\'s interconnected world with a combination of technical expertise, business acumen, cross-cultural communication abilities, and a global perspective, Information Systems programs prepare them to succeed in a variety of roles and industries, both locally and on the global stage.
+    </string>
+
+
+    <!-- 2.2.4. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | HOSPITALITY MANAGEMENT ====================== -->
+    <string name="collegiateStatementOneHospitalityManagement">
+        The BSHM program offers competitive and industry-based curriculum that provides the students with the required competencies and positive work values needed to meet the demands of the changing industry and global environment. The program also provides the students with practical alternative learning through various skills development activities, seminars and educational tours. Likewise, the program aims to provide the Hotel and Restaurant industry with graduates who possess the requisite knowledge, skills and values to become successful entrepreneurs.
+    </string>
+
+    <string name="collegiateStatementTwoHospitalityManagement">
+        • To provide students with a strong management and service orientation, as well as global perspective of the hotel and restaurant operations.
+    </string>
+
+    <string name="collegiateStatementThreeHospitalityManagement">
+        • Provide students the necessary knowledge and skills needed to develop the competencies required in order to prepare them for gainful employment within the service industry both locally and abroad.
+    </string>
+
+
+    <!-- 2.2.5. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | ELEMENTARY EDUCATION ====================== -->
+    <string name="collegiateStatementOneElementaryEducation">
+        The Education curriculum aims to equip future teachers with a wide range of theoretical and methodological skills that are important for a more innovative approach to teaching in order to maximize student learning.
+    </string>
+
+
+    <!-- 2.2.6. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | ENGLISH LANGUAGE ====================== -->
+    <string name="collegiateStatementOneEnglishLanguage">
+        Our program focuses on basic skills development for effective communication as well as developing a deeper appreciation for various literary works.
+    </string>
+
+
+
+
+
+
+
+
     <string name="collegiateStatementTitleSecond">BS BUSINESS ADMINISTRATION</string>
     <string name="collegiateStatementTitleThird">BS INFORMATION SYSTEM (BSIS) and BS COMPUTER SCIENCE (BSCS)</string>
     <string name="collegiateStatementTitleFourth">BS IN HOSPITALITY MANAGEMENT (BSHM)</string>
