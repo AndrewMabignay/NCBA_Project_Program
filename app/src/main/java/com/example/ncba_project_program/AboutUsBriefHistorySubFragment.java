@@ -27,11 +27,12 @@ public class AboutUsBriefHistorySubFragment extends Fragment {
             R.drawable.torres
     };
     private int currentIndex = 0;
-    private Handler handler = new Handler();
+    private Handler handler;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.about_us_brief_history_submenu_subfragment, container, false);
+        handler = new Handler();
         AddElement(view);
         return view;
     }

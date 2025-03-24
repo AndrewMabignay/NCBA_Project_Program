@@ -2,132 +2,209 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@color/lightWhite"
 >
-    <!-- TESTING -->
-    <LinearLayout
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
     >
-        <LinearLayout
-            android:id="@+id/GraduateProgram"
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:clickable="true"
-        >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Graduate Program"
-            />
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:src="@drawable/ncba_taytay"
+            android:scaleType="centerCrop"
+            android:tint="#990d4f20"
+            tools:ignore="UseAppTint"
+        />
 
         <LinearLayout
-            android:id="@+id/CollegiateProgram"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:clickable="true"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Collegiate Program"
-            />
-        </LinearLayout>
-    </LinearLayout>
-    
-    <!-- END TESTING -->
-    
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ACADEMIC PROGRAMS"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="23dp"
-        android:background="@drawable/shadow_subheader_box"
-        android:fontFamily="@font/poppins_semibold"
-        android:paddingVertical="20dp"
-        android:letterSpacing="0.03"
-    />
-
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
-        android:fadeScrollbars="false"
-        android:scrollbarSize="5dp"
-        android:nestedScrollingEnabled="true"
-    >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="35dp"
+            android:layout_marginTop="40dp"
         >
-            <ImageView
-                android:id="@+id/AcademicPictures"
+
+            <!-- ============================= FIRST ROW ============================= -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/avr_first_image"
-                android:adjustViewBounds="true"
-                android:layout_marginBottom="30dp"
-            />
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/academicStatementOne"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
-                android:lineHeight="28dp"
-                android:layout_marginBottom="30dp"
-            />
+                <!-- ========= 1. ACADEMIC PROGRAM ========= -->
+                <LinearLayout
+                    android:id="@+id/AcademicProgram"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="30dp"
+                    android:layout_gravity="center"
+                    >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/academicStatementTwo"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
-                android:lineHeight="28dp"
-                android:layout_marginBottom="30dp"
-            />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf518"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                        />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/academicStatementThree"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
-                android:lineHeight="28dp"
-                android:layout_marginBottom="30dp"
-            />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACADEMIC PROGRAMS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                        />
+                </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+                <!-- ========= 2. GRADUATE PROGRAM ========= -->
+                <LinearLayout
+                    android:id="@+id/GraduateProgram"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf19d"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GRADUATE PROGRAMS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ============================= SECOND ROW ============================= -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/academicStatementFour"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
-                android:lineHeight="28dp"
-                android:layout_marginBottom="30dp"
-            />
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="25dp"
+            >
+                <!-- ========= 3. COLLEGIATE PROGRAM ========= -->
+                <LinearLayout
+                    android:id="@+id/CollegiateProgram"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf501"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COLLEGIATE PROGRAMS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                    />
+                </LinearLayout>
+
+                <!-- ========= 4. COLLEGE ADMISSION ========= -->
+                <LinearLayout
+                    android:id="@+id/ProgramOfferings"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:background="@drawable/home_button"
+                    android:paddingVertical="45dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\uf51c"
+                        android:textColor="@color/lightWhite"
+                        android:textSize="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/font_awesome_6_free_solid_900"
+                        android:textAlignment="center"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PROGRAM OFFERINGS"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="11sp"
+                        android:textColor="@color/lightWhite"
+                        android:letterSpacing="0.05"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:lineHeight="20dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
-    </ScrollView>
+    </FrameLayout>
 </LinearLayout>

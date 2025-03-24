@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightWhite"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROGRAM OFFERINGS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:letterSpacing="0.03"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingHorizontal="20dp"
+        >
+
+            <!-- _____________________ 1. GRADUATE PROGRAM _____________________ -->
+            <LinearLayout
+                android:id="@+id/GraduateProgram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                >
+                    <ImageView
+                        android:id="@+id/GraduateProgramBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/graduate_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                    />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf501"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Graduate Program"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 2. COLLEGIATE PROGRAM _____________________ -->
+            <LinearLayout
+                android:id="@+id/CollegiateProgram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="15dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/CollegiateProgramBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/collegiate_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                    />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf19d"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collegiate Program"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- _____________________ 3. COMPUTER SYSTEM _____________________ -->
+            <LinearLayout
+                android:id="@+id/ComputerSystem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginTop="15dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <ImageView
+                        android:id="@+id/ComputerSystemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/computer_system_background"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf108"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BSIS and BSCS"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
