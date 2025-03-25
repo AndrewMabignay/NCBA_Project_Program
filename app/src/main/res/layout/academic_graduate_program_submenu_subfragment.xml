@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightWhite"
 >
     <TextView
         android:layout_width="match_parent"
@@ -10,7 +11,7 @@
         android:text="GRADUATE PROGRAMS"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="23dp"
+        android:textSize="17dp"
         android:background="@drawable/shadow_subheader_box"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
@@ -23,28 +24,30 @@
         android:layout_height="wrap_content"
         android:scrollbarThumbVertical="@drawable/custom_scrollbar"
         android:fadeScrollbars="false"
-        android:scrollbarSize="5dp"
+        android:scrollbarSize="3dp"
         android:nestedScrollingEnabled="true"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="35dp"
     >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
         >
-            <!-- CENTER FOR GRADUATE STUDIES IN BUSINESS AND MANAGEMENT [TITLE] -->
+
+            <!-- CENTER FOR GRADUATE STUDIES IN  BUSINESS AND MANAGEMENT -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Center for Graduate Studies in Business and Management"
+                android:text="CENTER FOR GRADUATE STUDIES IN  BUSINESS AND MANAGEMENT"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:background="@drawable/shadow_subheader_box"
+                android:textSize="13sp"
+                android:background="@drawable/shadow_subheader_box_second"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
+                android:paddingHorizontal="40dp"
+                android:layout_marginBottom="20dp"
                 android:letterSpacing="0.03"
                 android:lineHeight="33dp"
                 android:shadowColor="@color/black"
@@ -60,14 +63,13 @@
                 android:text="PROGRAM OBJECTIVES"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:background="@drawable/shadow_subheader_box_second"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
                 android:paddingHorizontal="30dp"
                 android:letterSpacing="0.03"
                 android:lineHeight="33dp"
-                android:layout_marginTop="20dp"
                 android:shadowColor="@color/black"
                 android:shadowDx="2"
                 android:shadowDy="2"
@@ -78,51 +80,69 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="25dp"
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
                 android:text="@string/graduateStatementOneProgramObjectives"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="13sp"
+            />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/graduateStatementTwoProgramObjectives"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
+                android:paddingLeft="4dp"
             />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/graduateStatementThreeProgramObjectives"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
+                android:paddingLeft="4dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graduateStatementFourProgramObjectives"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="30dp"
+                android:paddingLeft="4dp"
             />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/graduateStatementFiveProgramObjectives"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
+                android:paddingLeft="4dp"
             />
 
             <!-- ACADEMIC PROGRAMS [TITLE] -->
@@ -132,14 +152,14 @@
                 android:text="ACADEMIC PROGRAMS"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:background="@drawable/shadow_subheader_box_second"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
                 android:paddingHorizontal="30dp"
+                android:layout_marginTop="25dp"
                 android:letterSpacing="0.03"
                 android:lineHeight="33dp"
-                android:layout_marginTop="20dp"
                 android:shadowColor="@color/black"
                 android:shadowDx="2"
                 android:shadowDy="2"
@@ -147,42 +167,147 @@
             />
 
             <!-- MBA (MASTER IN BUSINESS ADMINISTRATION) BUTTON -->
-            <TextView
-                android:id="@+id/MBA"
+            <LinearLayout
+                android:id="@+id/MasterInBusinessAdministration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MASTER IN BUSINESS ADMINISTRATION (MBA)"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="15dp"
-                android:paddingHorizontal="15dp"
-            />
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                >
+                    <ImageView
+                        android:id="@+id/MasterInBusinessAdministrationBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/master_in_business_administration"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                    />
 
-            <!-- MBA (MASTER IN BUSINESS ADMINISTRATION) BUTTON -->
-            <TextView
-                android:id="@+id/MPA"
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf1ad"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MBA"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- MPA (MASTER IN PUBLIC ADMINISTRATION) BUTTON -->
+            <LinearLayout
+                android:id="@+id/MasterInPublicAdministration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MASTER IN BUSINESS ADMINISTRATION (MBA)"
-                android:textSize="16sp"
-                android:textColor="@color/slightDarkGreen"
-                android:lineHeight="30dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:textAlignment="center"
+                android:orientation="horizontal"
                 android:clickable="true"
-                android:background="@drawable/course_button"
-                android:layout_marginTop="20dp"
-                android:layout_marginHorizontal="30dp"
-                android:paddingVertical="15dp"
-                android:paddingHorizontal="15dp"
-            />
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                >
+                    <ImageView
+                        android:id="@+id/MasterInPublicAdministrationBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/master_in_public_administration"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:stateListAnimator="@anim/image_hover"
+                    />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf19c"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MPA"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

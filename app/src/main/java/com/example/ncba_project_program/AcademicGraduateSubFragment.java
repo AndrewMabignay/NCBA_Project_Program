@@ -1,17 +1,20 @@
 package com.example.ncba_project_program;
 
 import android.app.AlertDialog;
+import android.graphics.Outline;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewOutlineProvider;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 public class AcademicGraduateSubFragment extends Fragment {
-    private TextView mbaDetails, mpaDetails;
+    private LinearLayout mbaProgramDetails, mpaProgramDetails;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -22,11 +25,28 @@ public class AcademicGraduateSubFragment extends Fragment {
     }
 
     private void AddElement(View view) {
-        mbaDetails = view.findViewById(R.id.MBA);
-        mpaDetails = view.findViewById(R.id.MPA);
+        mbaProgramDetails = view.findViewById(R.id.MasterInBusinessAdministration);
+        mbaProgramDetails.setClipToOutline(true);
+        mbaProgramDetails.setOutlineProvider(new ViewOutlineProvider() {
+            @Override
+            public void getOutline(View view, Outline outline) {
+                int radius = 28;
+                outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
+            }
+        });
+
+        mpaProgramDetails = view.findViewById(R.id.MasterInPublicAdministration);
+        mpaProgramDetails.setClipToOutline(true);
+        mpaProgramDetails.setOutlineProvider(new ViewOutlineProvider() {
+            @Override
+            public void getOutline(View view, Outline outline) {
+                int radius = 28;
+                outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(), radius);
+            }
+        });
     }
     private void AddInteraction() {
-        mbaDetails.setOnClickListener(e -> {
+        mbaProgramDetails.setOnClickListener(e -> {
             if (getActivity() == null) return; // ✅ Prevents null context issues
 
             AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
@@ -50,10 +70,18 @@ public class AcademicGraduateSubFragment extends Fragment {
             dialogMBA.setCancelable(false);
             dialogMBA.setCanceledOnTouchOutside(false);
 
+            dialogMBA.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogMBA.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
+
             dialogMBA.show();
         });
 
-        mpaDetails.setOnClickListener(e -> {
+        mpaProgramDetails.setOnClickListener(e -> {
             if (getActivity() == null) return; // ✅ Prevents null context issues
 
             AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
@@ -76,6 +104,14 @@ public class AcademicGraduateSubFragment extends Fragment {
             // ✅ Prevent dismissing when clicking outside
             dialogMPA.setCancelable(false);
             dialogMPA.setCanceledOnTouchOutside(false);
+
+            dialogMPA.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogMPA.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
 
             dialogMPA.show();
         });
