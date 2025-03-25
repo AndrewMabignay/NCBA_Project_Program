@@ -176,44 +176,44 @@
                 </FrameLayout>
             </LinearLayout>
 
-            <!-- _____________________ 3. COMPUTER SYSTEM _____________________ -->
+            <!-- _____________________ 3. ASSOCIATE PROGRAM _____________________ -->
             <LinearLayout
-                android:id="@+id/ComputerSystem"
+                android:id="@+id/AssociateProgram"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:clickable="true"
                 android:layout_marginTop="15dp"
-                >
+            >
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    >
+                >
                     <ImageView
                         android:id="@+id/ComputerSystemBackground"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/computer_system_background"
-                        android:scaleType="centerCrop"
+                        android:src="@drawable/associate_program_background"
+                        android:scaleType="center"
                         android:adjustViewBounds="true"
                         android:stateListAnimator="@anim/image_hover"
-                        />
+                    />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/dark_overlay_effect"
-                        />
+                    />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        >
+                    >
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="\uf108"
+                            android:text="\uf549"
                             android:textColor="@color/lightWhite"
                             android:textSize="16dp"
                             android:fontFamily="@font/font_awesome_6_free_solid_900"
@@ -224,12 +224,12 @@
                             android:shadowDx="2"
                             android:shadowDy="2"
                             android:shadowRadius="3"
-                            />
+                        />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="BSIS and BSCS"
+                            android:text="Associate Program"
                             android:textColor="@color/lightWhite"
                             android:textSize="16dp"
                             android:fontFamily="@font/poppins_semibold"
@@ -241,7 +241,7 @@
                             android:shadowDx="2"
                             android:shadowDy="2"
                             android:shadowRadius="3"
-                            />
+                        />
                     </LinearLayout>
                 </FrameLayout>
             </LinearLayout>

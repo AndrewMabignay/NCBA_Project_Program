@@ -306,6 +306,19 @@
     </string>
 
 
+    <!-- 2.3.1. ====================== ACADEMIC PROGRAMS | COLLEGIATE PROGRAMS | ENGLISH LANGUAGE ====================== -->
+    <string name="programOfferingsStatementOneCollegiateProgram">
+        • Bachelor of Science in Accountancy (BSA)\n• Bachelor of Science in Management Accounting (BSMA)\n• Bachelor of Science in Hospitality Management (BSHM)\n• Bachelor of Science in Business Administration (BSBA) major in:
+    </string>
+
+    <string name="programOfferingsStatementTwoCollegiateProgram">
+        • Human Resource Management\n• Financial Management\n• Marketing Management\n• Operations Management
+    </string>
+
+    <string name="programOfferingsStatementThreeCollegiateProgram">
+        • Bachelor of Science in Information System (BSIS) – Cubao &amp; Fairview campus only\n• Bachelor of Science in Computer Science (BSCS) – Taytay campus only\n• Bachelor of Arts (AB) in English Language – Fairview &amp; Taytay campus only\n• Bachelor of Elementary Education (BEEd)\n• Bachelor of Secondary Education (BSEd) with specialization in:
+    </string>
+
 
 
 

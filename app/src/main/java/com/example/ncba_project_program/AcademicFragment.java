@@ -23,9 +23,10 @@ public class AcademicFragment extends Fragment {
         academicProgram = view.findViewById(R.id.AcademicProgram);
         graduateProgram = view.findViewById(R.id.GraduateProgram);
         collegiateProgram = view.findViewById(R.id.CollegiateProgram);
+        programOfferings = view.findViewById(R.id.ProgramOfferings);
     }
 
-    private Fragment academicFragment, graduateFragment, collegiateFragment;
+    private Fragment academicFragment, graduateFragment, collegiateFragment, programOfferingsFragment;
 
     private void AddInteraction() {
         academicProgram.setOnClickListener(e -> {
@@ -77,6 +78,24 @@ public class AcademicFragment extends Fragment {
                             R.anim.slide_out_right_to_left  // Pop exit (Backstack)
                     )
                     .replace(R.id.Main_Fragment_Container, collegiateFragment)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        programOfferings.setOnClickListener(e -> {
+            if (programOfferingsFragment == null) {
+                programOfferingsFragment = new AcademicProgramOfferingsSubFragment();
+            }
+
+            requireActivity().getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                    )
+                    .replace(R.id.Main_Fragment_Container, programOfferingsFragment)
                     .setReorderingAllowed(true)
                     .addToBackStack(null)
                     .commit();
