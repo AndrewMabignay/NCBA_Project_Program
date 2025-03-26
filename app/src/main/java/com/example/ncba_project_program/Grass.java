@@ -2,11 +2,11 @@ package com.example.ncba_project_program;
 
 import android.graphics.Bitmap;
 
-public class GrassSnakeGame {
+class Grass {
     private Bitmap bm;
     private int x, y, width, height;
 
-    public GrassSnakeGame(Bitmap bm, int x, int y, int width, int height) {
+    public Grass(Bitmap bm, int x, int y, int width, int height) {
         this.bm = bm;
         this.x = x;
         this.y = y;

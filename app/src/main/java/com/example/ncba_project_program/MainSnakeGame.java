@@ -1,34 +1,62 @@
 package com.example.ncba_project_program;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.SurfaceView;
+import android.util.DisplayMetrics;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
-public class MainSnakeGame extends Activity {
-    private GameViewSnakeGame gameView;
-
+public class MainSnakeGame extends AppCompatActivity {
+    public static ImageView img_swipe;
+    public static Dialog dialogScore;
+    private GameView gv;
+    public static TextView txt_score, txt_best_score, txt_dialog_score, txt_dialog_best_score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        DisplayMetrics dm = new DisplayMetrics();
+        this.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        Constants.SCREEN_WIDTH = dm.widthPixels;
+        Constants.SCREEN_HEIGHT = dm.heightPixels;
         setContentView(R.layout.entertainment_snake_game);
-
-        // Hanapin ang SurfaceView sa XML
-        SurfaceView surfaceView = findViewById(R.id.gameSurface);
-
-        // Gamitin ang SurfaceView sa GameView
-        gameView = new GameViewSnakeGame(this, surfaceView);
+        img_swipe = findViewById(R.id.img_swipe);
+        gv = findViewById(R.id.gv);
+        txt_score = findViewById(R.id.txt_score);
+        txt_best_score = findViewById(R.id.txt_best_score);
+        dialogScore();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        gameView.pause();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        gameView.resume();
+    private void dialogScore() {
+        int bestScore = 0;
+        SharedPreferences sp = this.getSharedPreferences("gamesetting", Context.MODE_PRIVATE);
+        if(sp!=null){
+            bestScore = sp.getInt("bestscore",0);
+        }
+        MainSnakeGame.txt_best_score.setText(bestScore+"");
+        dialogScore = new Dialog(this);
+        dialogScore.setContentView(R.layout.entertainment_snake_game_dialog);
+        txt_dialog_score = dialogScore.findViewById(R.id.txt_dialog_score);
+        txt_dialog_best_score = dialogScore.findViewById(R.id.txt_dialog_best_score);
+        txt_dialog_best_score.setText(bestScore + "");
+        dialogScore.setCanceledOnTouchOutside(false);
+        RelativeLayout rl_start = dialogScore.findViewById(R.id.rl_start);
+        rl_start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                img_swipe.setVisibility(View.VISIBLE);
+                gv.reset();
+                dialogScore.dismiss();
+            }
+        });
+        dialogScore.show();
     }
 }
 
