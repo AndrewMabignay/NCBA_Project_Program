@@ -1,0 +1,94 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:layout_marginHorizontal="40dp"
+    android:layout_marginTop="18dp"
+    android:layout_marginBottom="25dp"
+    android:padding="12dp"
+    android:clickable="true"
+    android:focusable="true"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/lightWhite"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/ImagingEventSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blood_donation_event_one"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:lineHeight="28dp"
+            android:justificationMode="inter_word"
+            android:text="Life Saving Blood Donation"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_gravity="start"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineHeight="28dp"
+            android:justificationMode="inter_word"
+            android:text="Community Outreach Program, Events, Fairview"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            />
+
+        <!-- READ MORE BUTTON -->
+        <LinearLayout
+            android:id="@+id/BloodDonationEventOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/home_background_button"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:lineHeight="28dp"
+                android:justificationMode="inter_word"
+                android:text="Read More"
+                android:textColor="@color/lightWhite"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

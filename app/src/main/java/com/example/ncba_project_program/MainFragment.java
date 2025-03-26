@@ -1,16 +1,22 @@
 package com.example.ncba_project_program;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
 
 public class MainFragment extends Fragment {
-    private LinearLayout admission, academics, aboutUs, contactUs, webMaster, console;
+    private LinearLayout admission, academics, aboutUs, contactUs, webMaster, entertainment;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -22,12 +28,12 @@ public class MainFragment extends Fragment {
 
     private void AddElement(View view) {
         // ================= BUTTONS (LINEAR LAYOUT) =================
-        admission = view.findViewById(R.id.Admission);
-        academics = view.findViewById(R.id.Academic);
-        aboutUs = view.findViewById(R.id.AboutUs);
-        contactUs = view.findViewById(R.id.ContactUs);
-        webMaster = view.findViewById(R.id.WebMaster);
-        console = view.findViewById(R.id.Game);
+        admission = view.findViewById(R.id.AdmissionMain);
+        academics = view.findViewById(R.id.AcademicsMain);
+        aboutUs = view.findViewById(R.id.AboutUsMain);
+        contactUs = view.findViewById(R.id.ContactUsMain);
+        webMaster = view.findViewById(R.id.WebMasterMain);
+        entertainment = view.findViewById(R.id.EntertainmentMain);
     }
 
     private Fragment admissionFragment, academicFragment, aboutUsFragment, contactUsFragment;
@@ -108,11 +114,47 @@ public class MainFragment extends Fragment {
                     .commit();
         });
 
-        console.setOnClickListener(e -> {
+        entertainment.setOnClickListener(e -> {
             Intent intent = new Intent(getActivity(), MainSnakeGame.class);
             startActivity(intent);
         });
     }
 
 
+}
+
+class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
+    private Context context;
+    private List<Integer> eventImages; // Listahan ng event images
+
+    public EventAdapter(Context context, List<Integer> eventImages) {
+        this.context = context;
+        this.eventImages = eventImages;
+    }
+
+    @NonNull
+    @Override
+    public EventViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.activity_main_event_item_sub_fragment, parent, false);
+        return new EventViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull EventViewHolder holder, int position) {
+        holder.eventImage.setImageResource(eventImages.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return eventImages.size();
+    }
+
+    public static class EventViewHolder extends RecyclerView.ViewHolder {
+        ImageView eventImage;
+
+        public EventViewHolder(@NonNull View itemView) {
+            super(itemView);
+            eventImage = itemView.findViewById(R.id.ImagingEventSwitcher);
+        }
+    }
 }
