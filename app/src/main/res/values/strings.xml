@@ -457,4 +457,14 @@
     <string name="credentialsTwoFifthStatement">
         However, for those who will opt to change/correct their birth certificate, they must file the appropriate application with the municipal court. The final decision of the court on the applicant‘s petition shall be the basis if any correction is to be made with the school record.
     </string>
+
+
+
+    <style name="TabTextStyle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">24sp</item>
+    </style>
+
 </resources>

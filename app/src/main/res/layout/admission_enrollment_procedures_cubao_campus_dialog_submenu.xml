@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_dialog">
+    <!-- CLOSE BUTTON -->
+    <LinearLayout
+        android:id="@+id/CloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#xf177;"
+            android:textSize="14sp"
+            android:textColor="@color/slightDarkGreen"
+            android:fontFamily="@font/font_awesome_6_free_solid_900"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textSize="14sp"
+            android:textColor="@color/slightDarkGreen"
+            android:fontFamily="@font/poppins_semibold"
+        />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/careersTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slightDarkGreen"
+        app:tabIndicatorColor="@color/lightGreen"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorAnimationDuration="250"
+    >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BASIC EDUCATION"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            app:tabTextAppearance="@style/TabTextStyle"
+        />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COLLEGE"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            app:tabTextAppearance="@style/TabTextStyle"
+        />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRADUATE STUDIES"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            app:tabTextAppearance="@style/TabTextStyle"
+        />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerEnrollment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <!-- CONTENTS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+</LinearLayout>

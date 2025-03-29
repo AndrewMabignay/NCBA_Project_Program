@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/lightWhite">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENROLLMENT PROCEDURES"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp"
+        android:letterSpacing="0.03"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:nestedScrollingEnabled="true"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE CAMPUS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginTop="14dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
+
+            <!-- CUBAO CAMPUS -->
+            <LinearLayout
+                android:id="@+id/CubaoCampusEnrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:clipChildren="true"
+                        android:clipToPadding="true">
+
+                        <ImageView
+                            android:id="@+id/CubaoCampusBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ncba_cubao"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                        />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf549"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cubao Campus"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- TAYTAY CAMPUS -->
+            <LinearLayout
+                android:id="@+id/TaytayCampusEnrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:clipChildren="true"
+                        android:clipToPadding="true">
+
+                        <ImageView
+                            android:id="@+id/TaytayCampusBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ncba_taytay"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                        />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf549"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Taytay Campus"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- FAIRVIEW CAMPUS -->
+            <LinearLayout
+                android:id="@+id/FairviewCampusEnrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+            >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                >
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:clipChildren="true"
+                        android:clipToPadding="true"
+                    >
+
+                        <ImageView
+                            android:id="@+id/FairviewCampusEnrollmentBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ncba_fairview"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                        />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_overlay_effect"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                    >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf549"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="12dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fairview Campus"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:letterSpacing="0.02"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                        />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

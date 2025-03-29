@@ -480,7 +480,7 @@
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        >
+                    >
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
@@ -494,8 +494,8 @@
                                 android:id="@+id/EntertainmentMainBackground"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:src="@drawable/game_wallpaper"
-                                android:scaleType="centerCrop"
+                                android:src="@drawable/snake_game_entertainment_background_additional"
+                                android:scaleType="matrix"
                                 android:adjustViewBounds="true"
                             />
                         </androidx.cardview.widget.CardView>
