@@ -4,14 +4,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
@@ -36,8 +34,8 @@ public class AboutUsCareersSubFragment extends Fragment {
         careersTabLayout.setupWithViewPager(viewPager);
 
         VPAdapter vpAdapter = new VPAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        vpAdapter.addFragment(TestOne.newInstance(), "TEACHING");
-        vpAdapter.addFragment(TestTwo.newInstance(), "NON-TEACHING");
+        vpAdapter.addFragment(AboutUsCareerTeaching.newInstance(), "TEACHING");
+        vpAdapter.addFragment(AboutUsCareersNonTeaching.newInstance(), "NON-TEACHING");
         viewPager.setAdapter(vpAdapter);
     }
 }

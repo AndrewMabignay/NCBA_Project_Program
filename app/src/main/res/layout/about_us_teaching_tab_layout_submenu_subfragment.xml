@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightWhite"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COLLEGE FACULTY"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="50dp"
+        android:letterSpacing="0.03"
+        android:lineHeight="35dp"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:fadeScrollbars="false"
+        android:nestedScrollingEnabled="true"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+
+            <!-- 1. CUBAO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="CUBAO"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:paddingBottom="15dp"
+                android:text="• Accounting Professors (must be a CPA)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginHorizontal="40dp"
+            />
+
+
+            <!-- 2. FAIRVIEW -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="FAIRVIEW"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:paddingBottom="15dp"
+                android:text="• Accounting Professors (must be a CPA)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginHorizontal="40dp"
+            />
+
+
+            <!-- 3. TAYTAY -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="TAYTAY"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:paddingBottom="15dp"
+                android:text="• Accounting Professors (must be a CPA)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginHorizontal="40dp"
+            />
+
+
+            <!-- 4. PREFERABLY FULL TIME WITH A MASTER'S DEGREE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:paddingBottom="15dp"
+                android:text="Preferably Full Time with a Master’s Degree"
+                android:textColor="#800000"
+                android:textSize="13sp"
+            />
+
+
+            <!-- 5. APPLICATION REQUIREMENTS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:text="APPLICATION REQUIREMENTS"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:paddingBottom="15dp"
+                android:text="Updated CV / Resume, TOR, Diploma, PRC License (if applicable)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
