@@ -5,23 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/lightWhite"
-    >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SCHOLARSHIPS AND DISCOUNTS"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="17dp"
-        android:background="@drawable/shadow_subheader_box"
-        android:fontFamily="@font/poppins_semibold"
-        android:layout_marginTop="20dp"
-        android:paddingVertical="20dp"
-        android:paddingHorizontal="20dp"
-        android:letterSpacing="0.03"
-        android:lineHeight="35dp"
-    />
-
+>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +19,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
         >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCHOLARSHIPS AND DISCOUNTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="20dp"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="35dp"
+            />
+
             <!-- 1. ==================== ENTRANCE SCHOLARSHIP ==================== -->
             <TextView
                 android:layout_width="match_parent"
