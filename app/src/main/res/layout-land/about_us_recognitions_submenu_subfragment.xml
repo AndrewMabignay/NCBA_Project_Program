@@ -6,30 +6,13 @@
     android:orientation="vertical"
     android:background="@color/lightWhite"
 >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MISSION AND VISION WITH CORE VALUES"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="17dp"
-        android:background="@drawable/shadow_subheader_box"
-        android:fontFamily="@font/poppins_semibold"
-        android:layout_marginTop="20dp"
-        android:paddingVertical="20dp"
-        android:paddingHorizontal="40dp"
-        android:letterSpacing="0.03"
-        android:lineHeight="35dp"
-    />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbarThumbVertical="@drawable/custom_scrollbar"
         android:fadeScrollbars="false"
-        android:scrollbarSize="2dp"
+        android:scrollbarSize="5dp"
         android:nestedScrollingEnabled="true"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="25dp"
     >
         <LinearLayout
@@ -37,6 +20,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
         >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MISSION AND VISION WITH CORE VALUES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="20dp"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="40dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="35dp"
+                android:layout_marginBottom="20dp"
+            />
 
             <!--  1. MISSION -->
             <LinearLayout
@@ -220,7 +219,7 @@
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:text="Commitment\nIntegrity\nService to all\nAccountability"
+                android:text="Commitment                Integrity                Service to all                Accountability"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:paddingBottom="20dp"

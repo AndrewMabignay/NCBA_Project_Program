@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 
 public class AboutUsFragment extends Fragment {
-    private LinearLayout theInstitution, briefHistory, ncbaHymn;
+    private LinearLayout theInstitution, briefHistory, missionVision, ncbaHymn, career;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -22,10 +22,12 @@ public class AboutUsFragment extends Fragment {
     private void AddElement(View view) {
         theInstitution = view.findViewById(R.id.TheInstitution);
         briefHistory = view.findViewById(R.id.BriefHistory);
+        missionVision = view.findViewById(R.id.VisionMissionCoreValues);
         ncbaHymn = view.findViewById(R.id.NCBAHymn);
+        career = view.findViewById(R.id.Career);
     }
 
-    private Fragment theInstitutionFragment, briefHistoryFragment, ncbaHymnFragment;
+    private Fragment theInstitutionFragment, briefHistoryFragment, missionAndVisionFragment, ncbaHymnFragment, careersFragment;
     private void AddInteraction() {
         // 1. THE INSTITUTION
         theInstitution.setOnClickListener(e -> {
@@ -65,6 +67,15 @@ public class AboutUsFragment extends Fragment {
                     .commit();
         });
 
+        // 3. VISION, MISSION AND CORE VALUES
+        missionVision.setOnClickListener(e -> {
+            if (missionAndVisionFragment == null) {
+                missionAndVisionFragment = new AboutUsMissionVisionSubFragment();
+            }
+
+            TransitionFragmentInteraction(missionAndVisionFragment);
+        });
+
         // 4. NCBA HYMN
         ncbaHymn.setOnClickListener(e -> {
             if (ncbaHymnFragment == null) {
@@ -83,6 +94,30 @@ public class AboutUsFragment extends Fragment {
                     .addToBackStack(null)
                     .commit();
         });
+
+
+        // 6. CAREERS
+        career.setOnClickListener(e -> {
+            if (careersFragment == null) {
+                careersFragment = new AboutUsCareersSubFragment();
+            }
+
+            TransitionFragmentInteraction(careersFragment);
+        });
+    }
+
+    private void TransitionFragmentInteraction(Fragment fragment) {
+        requireActivity().getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations(
+                        R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                        R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                        R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                        R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                )
+                .replace(R.id.Main_Fragment_Container, fragment)
+                .setReorderingAllowed(true)
+                .addToBackStack(null)
+                .commit();
     }
 }
 

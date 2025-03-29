@@ -53,296 +53,539 @@
                         android:layout_height="wrap_content"
                         android:src="@drawable/fiftyeightanniversary"
                         android:adjustViewBounds="true"
-                        />
+                    />
                 </FrameLayout>
 
 
-                <!-- ============================= FIRST ROW ============================= -->
+                <!-- ============================= SECTION 2 ============================= -->
+                <!--  1. ADMISSION -->
                 <LinearLayout
+                    android:id="@+id/AdmissionMain"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="20dp"
+                >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
                     >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:clipChildren="true"
+                            android:clipToPadding="true">
 
-                    <!-- ========= 1. ADMISSION MAIN ========= -->
-                    <LinearLayout
-                        android:id="@+id/AdmissionMain"
-                        android:layout_width="0dp"
-                        android:layout_height="175dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:clickable="true"
-                        android:background="@drawable/home_background_button"
-                        android:paddingVertical="45dp"
-                        android:paddingHorizontal="30dp"
-                        android:layout_gravity="center"
+                            <ImageView
+                                android:id="@+id/AdmissionMainBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/admission_home_background"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                            />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
                         >
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf549"
-                            android:textColor="@color/MuchDarkerGreen"
-                            android:textSize="35dp"
-                            android:layout_marginBottom="20dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:textAlignment="center"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf549"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ADMISSION"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:textSize="13sp"
-                            android:textColor="@color/MuchDarkerGreen"
-                            android:letterSpacing="0.05"
-                            android:textAlignment="center"
-                            android:layout_gravity="center"
-                            android:lineHeight="20dp"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADMISSION"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
                             />
-                    </LinearLayout>
-
-                    <!-- ========= 2. ACADEMICS MAIN ========= -->
-                    <LinearLayout
-                        android:id="@+id/AcademicsMain"
-                        android:layout_width="0dp"
-                        android:layout_height="175dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:clickable="true"
-                        android:background="@drawable/home_button"
-                        android:paddingVertical="45dp"
-                        android:paddingHorizontal="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf02d"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="30dp"
-                            android:layout_marginBottom="20dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:textAlignment="center"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ACADEMICS"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:textSize="11sp"
-                            android:textColor="@color/lightWhite"
-                            android:letterSpacing="0.05"
-                            android:textAlignment="center"
-                            android:layout_gravity="center"
-                            android:lineHeight="20dp"
-                            />
-                    </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
                 </LinearLayout>
 
-                <!-- ============================= SECOND ROW ============================= -->
+                <!-- 2. ACADEMICS -->
                 <LinearLayout
+                    android:id="@+id/AcademicsMain"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingHorizontal="20dp"
-                    android:layout_marginTop="25dp"
-                    >
-                    <!-- ========= 3. ABOUT US MAIN ========= -->
-                    <LinearLayout
-                        android:id="@+id/AboutUsMain"
-                        android:layout_width="0dp"
-                        android:layout_height="175dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:clickable="true"
-                        android:background="@drawable/home_button"
-                        android:paddingVertical="45dp"
-                        android:paddingHorizontal="20dp"
-                        android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf0c0"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="30dp"
-                            android:layout_marginBottom="20dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:textAlignment="center"
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:clipChildren="true"
+                            android:clipToPadding="true">
+
+                            <ImageView
+                                android:id="@+id/AcademicMainBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/library_lab_one"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ABOUT US"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:textSize="11sp"
-                            android:textColor="@color/lightWhite"
-                            android:letterSpacing="0.05"
-                            android:textAlignment="center"
-                            android:layout_gravity="center"
-                            android:lineHeight="20dp"
-                            />
-                    </LinearLayout>
+                        </androidx.cardview.widget.CardView>
 
-                    <!-- ========= 4. CONTACT US MAIN ========= -->
-                    <LinearLayout
-                        android:id="@+id/ContactUsMain"
-                        android:layout_width="0dp"
-                        android:layout_height="175dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:clickable="true"
-                        android:background="@drawable/home_button"
-                        android:paddingVertical="45dp"
-                        android:paddingHorizontal="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf095"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="30dp"
-                            android:layout_marginBottom="20dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:textAlignment="center"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf02d"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="CONTACT US"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:textSize="11sp"
-                            android:textColor="@color/lightWhite"
-                            android:letterSpacing="0.05"
-                            android:textAlignment="center"
-                            android:layout_gravity="center"
-                            android:lineHeight="20dp"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACADEMICS"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
                             />
-                    </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
                 </LinearLayout>
 
-                <!-- ============================= THIRD ROW ============================= -->
+                <!-- 3. ABOUT US -->
                 <LinearLayout
+                    android:id="@+id/AboutUsMain"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:paddingHorizontal="20dp"
-                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
                     >
-                    <!-- ========= 5. WEB MASTER MAIN ========= -->
-                    <LinearLayout
-                        android:id="@+id/WebMasterMain"
-                        android:layout_width="0dp"
-                        android:layout_height="175dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:clickable="true"
-                        android:background="@drawable/home_button"
-                        android:paddingVertical="45dp"
-                        android:paddingHorizontal="20dp"
-                        android:layout_gravity="center"
-                    >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf5fc"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="30dp"
-                            android:layout_marginBottom="20dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:textAlignment="center"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="WEB MASTER"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:textSize="11sp"
-                            android:textColor="@color/lightWhite"
-                            android:letterSpacing="0.05"
-                            android:textAlignment="center"
-                            android:layout_gravity="center"
-                            android:lineHeight="20dp"
-                            />
-                    </LinearLayout>
-
-                    <!-- ========= 6. ENTERTAINMENT MAIN ========= -->
-                    <LinearLayout
-                        android:id="@+id/EntertainmentMain"
-                        android:layout_width="0dp"
-                        android:layout_height="175dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:clickable="true"
-                        android:background="@drawable/home_button"
-                        android:paddingVertical="45dp"
-                        android:paddingHorizontal="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
                         >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf091"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="30dp"
-                            android:layout_marginBottom="20dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:textAlignment="center"
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:clipChildren="true"
+                            android:clipToPadding="true">
+
+                            <ImageView
+                                android:id="@+id/AboutUsMainBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/admission_home_background"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ENTERTAINMENT"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:textSize="11sp"
-                            android:textColor="@color/lightWhite"
-                            android:letterSpacing="0.05"
-                            android:textAlignment="center"
-                            android:layout_gravity="center"
-                            android:lineHeight="20dp"
+                        </androidx.cardview.widget.CardView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                        >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf0c0"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
                             />
-                    </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ABOUT US"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                            />
+                        </LinearLayout>
+                    </FrameLayout>
                 </LinearLayout>
 
+                <!-- 4. CONTACT US -->
+                <LinearLayout
+                    android:id="@+id/ContactUsMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                    >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:clipChildren="true"
+                            android:clipToPadding="true">
+
+                            <ImageView
+                                android:id="@+id/ContactUsMainBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/contact_us_background"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                            />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                        >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf095"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                            />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CONTACT US"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                            />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 5. WEB MASTER -->
+                <LinearLayout
+                    android:id="@+id/WebMasterMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                    >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:clipChildren="true"
+                            android:clipToPadding="true">
+
+                            <ImageView
+                                android:id="@+id/WebMasterMainBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/web_master_background"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                            />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                        >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf5fc"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                            />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WEB MASTER"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                            />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 6. ENTERTAINMENT -->
+                <LinearLayout
+                    android:id="@+id/EntertainmentMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            android:clipChildren="true"
+                            android:clipToPadding="true">
+
+                            <ImageView
+                                android:id="@+id/EntertainmentMainBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/game_wallpaper"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                            />
+                        </androidx.cardview.widget.CardView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                        />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                        >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf091"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                            />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ENTERTAINMENT"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <!-- ============================= SECTION 3 ============================= -->
+                <!-- 1. TITLE -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="CAMPUS - WIDE NEWS AND EVENTS"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="17dp"
+                    android:textSize="16dp"
                     android:background="@drawable/shadow_subheader_box"
                     android:fontFamily="@font/poppins_semibold"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:paddingVertical="20dp"
-                    android:paddingHorizontal="20dp"
                     android:letterSpacing="0.03"
                 />
 
-                <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/viewPager"
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                />
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="25dp"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                >
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+                </androidx.cardview.widget.CardView>
+
+
+
 
 
                 <!-- WIDE NEWS AND EVENTS -->
@@ -351,7 +594,7 @@
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="6dp"
-                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginHorizontal="30dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginBottom="25dp"
                     android:padding="12dp"
