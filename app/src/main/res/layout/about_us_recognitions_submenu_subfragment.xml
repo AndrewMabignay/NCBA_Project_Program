@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MISSION AND VISION WITH CORE VALUES"
+        android:text="RECOGNITIONS"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="17dp"
@@ -30,60 +30,44 @@
         android:scrollbarSize="2dp"
         android:nestedScrollingEnabled="true"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="25dp"
     >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
         >
-
-            <!--  1. MISSION -->
-            <LinearLayout
+            <!-- QUALITY ASSURANCE MECHANISM [TITLE] -->
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginBottom="10dp"> <!-- Optional margin for spacing -->
+                android:text="QUALITY ASSURANCE MECHANISM"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+            />
 
-                <!-- Left Separator Line -->
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="3dp"
-                    android:layout_weight="1"
-                    android:background="@color/DarkGreen"
-                    android:layout_marginHorizontal="20dp"
-                />
-
-                <!-- Text in the Center -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MISSION"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:background="@drawable/shadow_subheader_box_second"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:paddingVertical="20dp"
-                    android:paddingHorizontal="30dp"
-                    android:letterSpacing="0.03"
-                    android:lineHeight="33dp"
-                    android:shadowColor="@color/black"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="4"
-                />
-
-                <!-- Right Separator Line -->
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="3dp"
-                    android:layout_weight="1"
-                    android:background="@color/DarkGreen"
-                    android:layout_marginHorizontal="20dp"
-                    />
-            </LinearLayout>
+            <!-- CONTENTS -->
+            <ImageView
+                android:id="@+id/RecognitionPictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pacu"
+                android:adjustViewBounds="true"
+                android:paddingHorizontal="28dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+            />
 
             <TextView
                 android:layout_width="match_parent"
@@ -92,15 +76,21 @@
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="28dp"
-                android:text="To be recognized as an academic institution for its responsive and innovative educational programs."
+                android:text="@string/AboutUsRecognitionsOneStatement"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:paddingBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:textAlignment="center"
             />
 
+
+
+
+
+
+
             <!--  2. VISION -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

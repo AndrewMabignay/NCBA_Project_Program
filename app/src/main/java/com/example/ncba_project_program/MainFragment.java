@@ -47,17 +47,7 @@ public class MainFragment extends Fragment {
                 admissionFragment = new AdmissionFragment();
             }
 
-            requireActivity().getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(
-                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
-                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
-                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
-                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
-                    )
-                    .replace(R.id.Main_Fragment_Container, admissionFragment)
-                    .setReorderingAllowed(true)
-                    .addToBackStack(null)
-                    .commit();
+            TransitionFragmentInteraction(admissionFragment);
         });
 
         // 2. ACADEMIC FRAGMENT
@@ -66,17 +56,7 @@ public class MainFragment extends Fragment {
                 academicFragment = new AcademicFragment();
             }
 
-            requireActivity().getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(
-                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
-                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
-                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
-                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
-                    )
-                    .replace(R.id.Main_Fragment_Container, academicFragment)
-                    .setReorderingAllowed(true)
-                    .addToBackStack(null)
-                    .commit();
+            TransitionFragmentInteraction(academicFragment);
         });
 
         // 3. ABOUT US
@@ -85,17 +65,7 @@ public class MainFragment extends Fragment {
                 aboutUsFragment = new AboutUsFragment();
             }
 
-            requireActivity().getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(
-                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
-                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
-                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
-                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
-                    )
-                    .replace(R.id.Main_Fragment_Container, aboutUsFragment)
-                    .setReorderingAllowed(true)
-                    .addToBackStack(null)
-                    .commit();
+            TransitionFragmentInteraction(aboutUsFragment);
         });
 
         // 4. CONTACT US
@@ -104,22 +74,26 @@ public class MainFragment extends Fragment {
                 contactUsFragment = new ContactUsFragment();
             }
 
-            requireActivity().getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(
-                            R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
-                            R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
-                            R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
-                            R.anim.slide_out_right_to_left  // Pop exit (Backstack)
-                    )
-                    .replace(R.id.Main_Fragment_Container, contactUsFragment)
-                    .setReorderingAllowed(true)
-                    .addToBackStack(null)
-                    .commit();
+            TransitionFragmentInteraction(contactUsFragment);
         });
 
         entertainment.setOnClickListener(e -> {
             Intent intent = new Intent(getActivity(), MainSnakeGame.class);
             startActivity(intent);
         });
+    }
+
+    private void TransitionFragmentInteraction(Fragment fragment) {
+        requireActivity().getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations(
+                        R.anim.slide_in_left_to_right,  // Enter animation (Left to Right)
+                        R.anim.slide_out_left_to_right, // Exit animation (Left to Right)
+                        R.anim.slide_in_right_to_left,  // Pop enter (Backstack)
+                        R.anim.slide_out_right_to_left  // Pop exit (Backstack)
+                )
+                .replace(R.id.Main_Fragment_Container, fragment)
+                .setReorderingAllowed(true)
+                .addToBackStack(null)
+                .commit();
     }
 }

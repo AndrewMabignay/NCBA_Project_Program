@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#F7F7F7">
+    android:background="#eaf6ea">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,677 +14,409 @@
         android:scrollbarSize="2dp"
         android:nestedScrollingEnabled="true"
     >
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
         >
-            <!--        <ImageView-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="match_parent"-->
-            <!--            android:src="@drawable/ncba_taytay"-->
-            <!--            android:scaleType="centerCrop"-->
-            <!--            android:tint="#660d4f20"-->
-            <!--            tools:ignore="UseAppTint"-->
-            <!--        />-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="40dp"
+            <!-- ============================= FIRST SECTION ============================= -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginHorizontal="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:foreground="@drawable/card_border"
             >
-                <FrameLayout
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:paddingHorizontal="20dp"
-                    >
-
-                    <!-- Shadow -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"
-                        android:layout_gravity="bottom"
-                        android:background="@drawable/shadow_background" />
-
-                    <!-- 58 Anniversary Image -->
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/fiftyeightanniversary"
-                        android:adjustViewBounds="true"
-                    />
-                </FrameLayout>
-
-
-                <!-- ============================= SECTION 2 ============================= -->
-                <!--  1. ADMISSION -->
-                <LinearLayout
-                    android:id="@+id/AdmissionMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:clickable="true"
-                    android:layout_marginHorizontal="20dp"
-                >
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                    >
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            app:cardCornerRadius="14dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent"
-                            android:clipChildren="true"
-                            android:clipToPadding="true">
-
-                            <ImageView
-                                android:id="@+id/AdmissionMainBackground"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/admission_home_background"
-                                android:scaleType="centerCrop"
-                                android:adjustViewBounds="true"
-                            />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/dark_overlay_effect"
-                        />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="\uf549"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginBottom="12dp"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="ADMISSION"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginBottom="12dp"
-                                android:letterSpacing="0.02"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- 2. ACADEMICS -->
-                <LinearLayout
-                    android:id="@+id/AcademicsMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:clickable="true"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="10dp"
-                >
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        >
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            app:cardCornerRadius="14dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent"
-                            android:clipChildren="true"
-                            android:clipToPadding="true">
-
-                            <ImageView
-                                android:id="@+id/AcademicMainBackground"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/library_lab_one"
-                                android:scaleType="centerCrop"
-                                android:adjustViewBounds="true"
-                            />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/dark_overlay_effect"
-                        />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="\uf02d"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginBottom="12dp"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="ACADEMICS"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginBottom="12dp"
-                                android:letterSpacing="0.02"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- 3. ABOUT US -->
-                <LinearLayout
-                    android:id="@+id/AboutUsMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:clickable="true"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="10dp"
-                    >
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        >
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            app:cardCornerRadius="14dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent"
-                            android:clipChildren="true"
-                            android:clipToPadding="true">
-
-                            <ImageView
-                                android:id="@+id/AboutUsMainBackground"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/admission_home_background"
-                                android:scaleType="centerCrop"
-                                android:adjustViewBounds="true"
-                            />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/dark_overlay_effect"
-                        />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="\uf0c0"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginBottom="12dp"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="ABOUT US"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginBottom="12dp"
-                                android:letterSpacing="0.02"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- 4. CONTACT US -->
-                <LinearLayout
-                    android:id="@+id/ContactUsMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:clickable="true"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="10dp"
-                >
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                    >
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            app:cardCornerRadius="14dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent"
-                            android:clipChildren="true"
-                            android:clipToPadding="true">
-
-                            <ImageView
-                                android:id="@+id/ContactUsMainBackground"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/contact_us_background"
-                                android:scaleType="centerCrop"
-                                android:adjustViewBounds="true"
-                            />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/dark_overlay_effect"
-                        />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="\uf095"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginBottom="12dp"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="CONTACT US"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginBottom="12dp"
-                                android:letterSpacing="0.02"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- 5. WEB MASTER -->
-                <LinearLayout
-                    android:id="@+id/WebMasterMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:clickable="true"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="10dp"
-                >
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                    >
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            app:cardCornerRadius="14dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent"
-                            android:clipChildren="true"
-                            android:clipToPadding="true">
-
-                            <ImageView
-                                android:id="@+id/WebMasterMainBackground"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/web_master_background"
-                                android:scaleType="centerCrop"
-                                android:adjustViewBounds="true"
-                            />
-
-                        </androidx.cardview.widget.CardView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/dark_overlay_effect"
-                        />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="\uf5fc"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginBottom="12dp"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="WEB MASTER"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginBottom="12dp"
-                                android:letterSpacing="0.02"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- 6. ENTERTAINMENT -->
-                <LinearLayout
-                    android:id="@+id/EntertainmentMain"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:clickable="true"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="10dp"
-                >
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                    >
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            app:cardCornerRadius="14dp"
-                            app:cardElevation="0dp"
-                            app:cardBackgroundColor="@android:color/transparent"
-                            android:clipChildren="true"
-                            android:clipToPadding="true">
-
-                            <ImageView
-                                android:id="@+id/EntertainmentMainBackground"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/snake_game_entertainment_background_additional"
-                                android:scaleType="matrix"
-                                android:adjustViewBounds="true"
-                            />
-                        </androidx.cardview.widget.CardView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/dark_overlay_effect"
-                        />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="horizontal"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="\uf091"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/font_awesome_6_free_solid_900"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="30dp"
-                                android:layout_marginBottom="12dp"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                            />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="ENTERTAINMENT"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="15dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:layout_gravity="bottom|start"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginBottom="12dp"
-                                android:letterSpacing="0.02"
-                                android:shadowColor="@color/black"
-                                android:shadowDx="2"
-                                android:shadowDy="2"
-                                android:shadowRadius="3"
-                                />
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-
-                <!-- ============================= SECTION 3 ============================= -->
-                <!-- 1. TITLE -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CAMPUS - WIDE NEWS AND EVENTS"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="16dp"
-                    android:background="@drawable/shadow_subheader_box"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:layout_marginTop="30dp"
-                    android:paddingVertical="20dp"
-                    android:letterSpacing="0.03"
+                    android:src="@drawable/fiftyeightanniversary"
+                    android:adjustViewBounds="true"
                 />
+            </androidx.cardview.widget.CardView>
+
+            <!-- ============================= SECOND SECTION ============================= -->
+            <!-- FIRST ROW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="10dp"
+            >
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="6dp"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginBottom="25dp"
-                    android:padding="12dp"
-                    android:clickable="true"
-                    android:focusable="true"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="50dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="3dp"
                 >
-                    <androidx.viewpager2.widget.ViewPager2
-                        android:id="@+id/viewPager"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                    />
-                </androidx.cardview.widget.CardView>
-
-
-
-
-
-                <!-- WIDE NEWS AND EVENTS -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="6dp"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginBottom="25dp"
-                    android:padding="12dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                >
-
                     <LinearLayout
+                        android:id="@+id/AdmissionMain"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        android:layout_height="match_parent"
                         android:gravity="center"
-                        android:background="@color/lightWhite"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button_extra"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="30dp"
+                        android:layout_gravity="center"
+                        android:elevation="25dp"
                     >
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:cardCornerRadius="16dp"
-                            app:cardElevation="6dp"
-                            android:clickable="true"
-                            android:focusable="true">
-
-                            <ImageView
-                                android:id="@+id/ImagingEventSwitcher"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/blood_donation_event_one"
-                                android:scaleType="centerCrop"
-                            />
-                        </androidx.cardview.widget.CardView>
+                            android:text="\uf549"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                        />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="30dp"
-                            android:layout_marginTop="30dp"
+                            android:text="ADMISSION"
                             android:fontFamily="@font/poppins_semibold"
-                            android:lineHeight="28dp"
-                            android:justificationMode="inter_word"
-                            android:text="Life Saving Blood Donation"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:layout_gravity="start"
+                            android:textSize="11sp"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:lineHeight="20dp"
                         />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="30dp"
-                            android:layout_marginTop="7dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:lineHeight="28dp"
-                            android:justificationMode="inter_word"
-                            android:text="Community Outreach Program, Events, Fairview"
-                            android:textColor="@color/black"
-                            android:textSize="13sp"
-                        />
-
-                        <!-- READ MORE BUTTON -->
-                        <LinearLayout
-                            android:id="@+id/BloodDonationEventOne"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:background="@drawable/home_background_button"
-                            android:layout_margin="20dp"
-                            android:clickable="true"
-                        >
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="15dp"
-                                android:layout_marginBottom="15dp"
-                                android:fontFamily="@font/poppins_medium"
-                                android:lineHeight="28dp"
-                                android:justificationMode="inter_word"
-                                android:text="Read More"
-                                android:textColor="@color/lightWhite"
-                                android:textSize="13sp"
-                            />
-                        </LinearLayout>
-
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="50dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    >
+                    <!-- ========= 1. PAYMENT OPTIONS ========= -->
+                    <LinearLayout
+                        android:id="@+id/AcademicsMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button_extra"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="30dp"
+                        android:layout_gravity="center"
+                        android:elevation="25dp"
+                    >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf02d"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACADEMICS"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:lineHeight="20dp"
+                        />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-        </FrameLayout>
+
+            <!-- SECOND ROW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="10dp"
+            >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="50dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="3dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/AboutUsMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button_extra"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="30dp"
+                        android:layout_gravity="center"
+                        android:elevation="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf0c0"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ABOUT US"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:lineHeight="20dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="50dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    >
+                    <!-- ========= 1. PAYMENT OPTIONS ========= -->
+                    <LinearLayout
+                        android:id="@+id/ContactUsMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button_extra"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="30dp"
+                        android:layout_gravity="center"
+                        android:elevation="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf095"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CONTACT US"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:lineHeight="20dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- THIRD ROW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="50dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginHorizontal="3dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/WebMasterMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button_extra"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="30dp"
+                        android:layout_gravity="center"
+                        android:elevation="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf5fc"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WEB MASTER"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:lineHeight="20dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="50dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    >
+                    <!-- ========= 1. PAYMENT OPTIONS ========= -->
+                    <LinearLayout
+                        android:id="@+id/EntertainmentMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button_extra"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="30dp"
+                        android:layout_gravity="center"
+                        android:elevation="25dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf091"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ENTERTAINMENT"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/MuchDarkerGreen"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:lineHeight="20dp"
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- ============================= THIRD SECTION ============================= -->
+            <!-- 1. TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAMPUS - WIDE NEWS AND EVENTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="15dp"
+                android:paddingVertical="20dp"
+                android:letterSpacing="0.03"
+            />
+
+            <!-- 2. CONTENTS -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="25dp"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+            >
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
     </ScrollView>
 
 

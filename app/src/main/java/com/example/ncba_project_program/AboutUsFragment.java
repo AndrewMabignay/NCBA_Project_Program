@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 
 public class AboutUsFragment extends Fragment {
-    private LinearLayout theInstitution, briefHistory, missionVision, ncbaHymn, career;
+    private LinearLayout theInstitution, briefHistory, missionVision, ncbaHymn, recognitions, career;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -24,10 +24,11 @@ public class AboutUsFragment extends Fragment {
         briefHistory = view.findViewById(R.id.BriefHistory);
         missionVision = view.findViewById(R.id.VisionMissionCoreValues);
         ncbaHymn = view.findViewById(R.id.NCBAHymn);
+        recognitions = view.findViewById(R.id.Recognition);
         career = view.findViewById(R.id.Career);
     }
 
-    private Fragment theInstitutionFragment, briefHistoryFragment, missionAndVisionFragment, ncbaHymnFragment, careersFragment;
+    private Fragment theInstitutionFragment, briefHistoryFragment, missionAndVisionFragment, ncbaHymnFragment, recognitionsFragment, careersFragment;
     private void AddInteraction() {
         // 1. THE INSTITUTION
         theInstitution.setOnClickListener(e -> {
@@ -95,6 +96,15 @@ public class AboutUsFragment extends Fragment {
                     .commit();
         });
 
+
+        // 5. RECOGNITION
+        recognitions.setOnClickListener(e -> {
+            if (recognitionsFragment == null) {
+                recognitionsFragment = new AboutUsRecognitionsSubFragment();
+            }
+
+            TransitionFragmentInteraction(recognitionsFragment);
+        });
 
         // 6. CAREERS
         career.setOnClickListener(e -> {

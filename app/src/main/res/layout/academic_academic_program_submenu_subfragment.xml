@@ -43,7 +43,9 @@
                 android:paddingHorizontal="28dp"
                 android:layout_marginTop="8dp"
                 android:clickable="true"
-            />
+                android:focusable="true"
+
+                />
 
             <TextView
                 android:layout_width="match_parent"

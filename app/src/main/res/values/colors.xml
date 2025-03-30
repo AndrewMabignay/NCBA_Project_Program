@@ -10,6 +10,8 @@
     <color name="lightGreen">#c8e6c9</color>
     <color name="lightYellow">#fff2cc</color>
     <color name="lightWhite">#f5f5f5</color>
+    <color name="lightWhiteExtra">#f1faf1</color>
+
 
     <!-- ADMISSION -->
     <color name="slightDarkGreen">#0a3d0a</color>

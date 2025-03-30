@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#66000000"> <!-- Ripple effect color (semi-transparent black) -->
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/> <!-- Round corners -->
+            <solid android:color="@color/lightWhiteExtra"/> <!-- Default background -->
+        </shape>
+    </item>
+</ripple>

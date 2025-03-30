@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 public class AcademicAcademicSubFragment extends Fragment {
@@ -23,10 +24,8 @@ public class AcademicAcademicSubFragment extends Fragment {
     private int currentIndex = 0;
     private Handler handler;
     private Runnable runnable;
-
-    // 🔥 Babaan natin ang swipe sensitivity
     private float x1, x2;
-    private static final int MIN_DISTANCE = 80; // Dati 150, ngayon 80 para mas magaan
+    private static final int MIN_DISTANCE = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,37 +40,67 @@ public class AcademicAcademicSubFragment extends Fragment {
 
     private void AddElement(View view) {
         academicImages = view.findViewById(R.id.AcademicPictures);
+        academicImages.setClickable(true);
+        academicImages.setFocusable(true);
 
-        // Swipe gestures using OnTouchListener
         academicImages.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        x1 = event.getX(); // Get starting X position
-                        return true;
+                        x1 = event.getX();
+                        return false;
                     case MotionEvent.ACTION_UP:
-                        x2 = event.getX(); // Get ending X position
+                        x2 = event.getX();
                         float deltaX = x2 - x1;
 
-                        if (Math.abs(deltaX) > MIN_DISTANCE) { // Mas maliit para hindi na madiin
+                        if (Math.abs(deltaX) > MIN_DISTANCE) {
                             if (deltaX > 0) {
-                                showPreviousImage(); // Swipe Right (Previous)
+                                showPreviousImage();
                             } else {
-                                showNextImage(); // Swipe Left (Next)
+                                showNextImage();
                             }
+                            return true;
                         }
-                        return true;
                 }
                 return false;
             }
         });
+
+        academicImages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showImageDialog();
+            }
+        });
+    }
+
+    private void showImageDialog() {
+        if (getContext() == null || getActivity() == null) return;
+
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(getContext());
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.about_us_brief_history_image_dialog_submenu, null);
+        builder.setView(dialogView);
+
+        ImageView dialogImageView = dialogView.findViewById(R.id.dialogImageView);
+        if (dialogImageView != null) {
+            dialogImageView.setImageResource(academicImageList[currentIndex]);
+        }
+
+        AlertDialog dialog = builder.create();
+
+        dialog.getWindow().setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
+
+        // Enable dismissal when clicking outside
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
+        dialog.show();
     }
 
     private void AddInteraction() {
         startImageTransition();
     }
-
 
     private void startImageTransition() {
         runnable = new Runnable() {
@@ -96,7 +125,6 @@ public class AcademicAcademicSubFragment extends Fragment {
                     @Override
                     public void onAnimationRepeat(Animation animation) {}
                 });
-
                 handler.postDelayed(this, 5000);
             }
         };
@@ -124,5 +152,4 @@ public class AcademicAcademicSubFragment extends Fragment {
             handler.removeCallbacks(runnable);
         }
     }
-
 }
