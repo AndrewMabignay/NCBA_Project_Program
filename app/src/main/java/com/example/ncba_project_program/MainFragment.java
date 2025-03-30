@@ -7,8 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainFragment extends Fragment {
     private LinearLayout admission, academics, aboutUs, contactUs, webMaster, entertainment;
@@ -34,9 +40,17 @@ public class MainFragment extends Fragment {
         entertainment = view.findViewById(R.id.EntertainmentMain);
 
 
-        viewPager2 = view.findViewById(R.id.viewPager);
-        adapter = new EventPagerAdapter(requireActivity());
+
+        viewPager2 = view.findViewById(R.id.viewPagerHome);
+        List<Event> eventList = new ArrayList<>();
+        eventList.add(new Event("Open House 2024", "A chance to explore our campus!", R.drawable.blood_donation_event_one));
+        eventList.add(new Event("IT Seminar", "Learn the latest trends in technology.", R.drawable.blood_donation_event_one));
+        eventList.add(new Event("Sports Fest", "Showcase your skills in various sports!", R.drawable.blood_donation_event_one));
+
+        // SET ADAPTER
+        adapter = new EventPagerAdapter(requireActivity(), eventList);
         viewPager2.setAdapter(adapter);
+
     }
 
     private Fragment admissionFragment, academicFragment, aboutUsFragment, contactUsFragment;
@@ -97,3 +111,51 @@ public class MainFragment extends Fragment {
                 .commit();
     }
 }
+
+class EventPagerAdapter extends FragmentStateAdapter {
+    private final List<Event> eventList;
+
+    public EventPagerAdapter(@NonNull FragmentActivity fragmentActivity, List<Event> eventList) {
+        super(fragmentActivity);
+        this.eventList = eventList;
+    }
+
+    @NonNull
+    @Override
+    public Fragment createFragment(int position) {
+        return EventItemFragment.newInstance(eventList.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return eventList.size();
+    }
+}
+
+
+
+
+class Event {
+    private String title;
+    private String description;
+    private int imageResId; // Resource ID ng event image
+
+    public Event(String title, String description, int imageResId) {
+        this.title = title;
+        this.description = description;
+        this.imageResId = imageResId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getImageResId() {
+        return imageResId;
+    }
+}
+
