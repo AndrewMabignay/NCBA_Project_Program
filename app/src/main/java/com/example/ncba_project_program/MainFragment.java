@@ -53,7 +53,7 @@ public class MainFragment extends Fragment {
 
     }
 
-    private Fragment admissionFragment, academicFragment, aboutUsFragment, contactUsFragment;
+    private Fragment admissionFragment, academicFragment, aboutUsFragment, webMasterFragment, contactUsFragment;
     private void AddInteraction() {
         // 1. ADMISSION FRAGMENT
         admission.setOnClickListener(e -> {
@@ -89,6 +89,14 @@ public class MainFragment extends Fragment {
             }
 
             TransitionFragmentInteraction(contactUsFragment);
+        });
+
+        webMaster.setOnClickListener(e -> {
+            if (webMasterFragment == null) {
+                webMasterFragment = new WebMasterFragment();
+            }
+
+            TransitionFragmentInteraction(webMasterFragment);
         });
 
         entertainment.setOnClickListener(e -> {
