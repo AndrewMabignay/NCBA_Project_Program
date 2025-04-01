@@ -1,18 +1,894 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rounded_dialog"
->
-    <!-- CONTENTS -->
-    <LinearLayout
+    android:orientation="vertical"
+    android:background="@color/lightWhiteGreen"
+    >
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-    >
+        android:text="COLLEGE DEPARTMENT"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="20dp"
+        android:letterSpacing="0.03"
+        />
 
-    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!-- 1. NEW STUDENT ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEW AND TRANSFEREES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                />
+
+            <!-- 1. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="1. Admission Office (Ground Flr. HRM Bldg)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Submit credentials for admission\n• Fill out an application form\n• Secure permit for the entrance examination"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="2. Finance Office (Admin Bldg – Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present permit to the cashier\n• Pay the entrance exam fee\n• Secure an official receipt for the exam"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 3. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="3. Guidance Office (High School Bldg)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present official receipt of entrance exam\n• Take the entrance examination\n• Secure results of the exam and endorsement for interview"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="4. Office of the Student Affairs (Chief Academic Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Report for online interview\n• Secure permit to enroll"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 5. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="5. Admission Office (Ground Flr. HRM Bldg)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Submit application form\n• Process registration\n• Secure an assessment form"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 6. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="6. Finance Office (Admin Bldg – Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present approved assessment form\n• Pay the tuition &amp; other school fees\n• Secure an official receipt"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 7. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="7. COM Section (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present official receipt of tuition fee\n• Secure a Certificate of Matriculation (COM)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 8. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="8. Gmail Section (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Sign up for NCBA Gmail account"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 9. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="9. ID Section (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Secure school ID"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 10. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="10. Clinic (College Bldg. Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Fill out the medical information sheet"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 11. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="11. Uniform Section (Alumni Office – 2nd Flr. of Student Lounge)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Order uniform"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 12. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="12. PE &amp; NSTP Uniform ( HR Dept. – 2nd Flr. Admin Bldg)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="18dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Order uniform"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+
+            <!-- 2. CROSS ENROLLEES ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CROSS ENROLLEES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                />
+
+            <!-- 2.1. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="1. Registrar’s Office (across Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present cross-enrollment permit &amp; requirements\n• Secure an endorsement for online interview"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.2. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="2. Office of the Student Affairs (Chief Academic Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Report for online interview\n• Secure approval to enroll"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.3. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="3. Registrar’s Office (across Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Process registration\n• Take the entrance examination\n• Secure an assessment form"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.4. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="4. Finance Office (Admin Bldg – Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the approved assessment form\n• Pay the tuition and other school fees\n• Secure an official receipt"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.5. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="5. COM Section (Admission Office – Ground Flr. HRM Bldg))"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the official receipt\n• Secure a Certificate of Matriculation (COM)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.6. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="6. Gmail Section (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Sign up for NCBA Gmail account"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.7. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="7. ID Section (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Secure the school ID"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 2.8. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="8. Clinic (College Bldg. – Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Fill out the medical information sheet"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4. OLD STUDENTS & RETURNEES ==================== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OLD STUDENTS AND ENROLLEES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/shadow_subheader_box_second"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="33dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                />
+
+            <!-- 4.1. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="1. Computer Lab (College Bldg. Ground Flr – Encoding Room beside Rm. 12)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Register your classes\n• Print the assessment form"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.2. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="2. College Registrar’s Office (across Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Secure approval of the assessment form"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.3. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_character"
+                android:lineHeight="28dp"
+                android:text="3. Finance Office (Admin Bldg – Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:textColor="@color/black"
+                android:text="• Present the approved assessment form\n• Pay the tuition and other school fees\n• Secure an official receipt"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.4. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="4. COM Section (Admission Office – Ground Flr. HRM Bldg))"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the official receipt\n• Secure a Certificate of Matriculation (COM)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.5. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="5. Gmail Section (for returnees only) (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Sign up for NCBA Gmail account"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.6. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="6. ID Section (Admission Office)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Secure the school ID"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.7. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="7. Clinic (College Bldg. – Lobby)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Fill out the medical information sheet"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.8. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="8. Uniform Section ( Alumni Office – 2nd Flr. Of Student Lounge)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Order uniform"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <!-- 4.9. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineHeight="28dp"
+                android:text="9. PE &amp; NSTP Uniform (HR Dept. – 2nd Flr. Admin Bldg)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:lineHeight="28dp"
+                android:text="• Present the COM\n• Order uniform"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

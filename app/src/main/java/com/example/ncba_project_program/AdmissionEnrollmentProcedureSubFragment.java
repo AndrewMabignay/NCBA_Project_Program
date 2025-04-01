@@ -8,7 +8,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.lifecycle.Lifecycle;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+
+import androidx.viewpager.widget.ViewPager;
+
+import java.util.ArrayList;
 
 public class AdmissionEnrollmentProcedureSubFragment extends Fragment  {
     private LinearLayout cubaoCampusEnrollment, taytayCampusEnrollment, fairviewCampusEnrollment;
@@ -49,6 +64,29 @@ public class AdmissionEnrollmentProcedureSubFragment extends Fragment  {
                 dialogCubaoCampusEnrollmentViewProgram.dismiss();
             });
 
+            // Inside AddInteraction(), update the adapter class:
+            ViewPager2 viewPager = dialogCubaoCampusEnrollmentView.findViewById(R.id.viewpagerEnrollmentTwo);
+            TabLayout careersTabLayout = dialogCubaoCampusEnrollmentView.findViewById(R.id.enrollmentCubaoTabLayout);
+
+            // Use FragmentStateAdapter for ViewPager2
+            VPAdaptering vpAdaptering = new VPAdaptering(getChildFragmentManager(), getLifecycle());
+            vpAdaptering.addFragment(AdmissionCubaoCollegeEnrollmentProcedureSubMenuFragment.newInstance(), "COLLEGE");
+            vpAdaptering.addFragment(AdmissionCubaoGraduateStudiesEnrollmentProcedureSubMenuFragment.newInstance(), "GRADUATE STUDIES");
+            viewPager.setAdapter(vpAdaptering);
+
+            // Use TabLayoutMediator for ViewPager2 compatibility
+            new TabLayoutMediator(careersTabLayout, viewPager, (tab, position) -> tab.setText(vpAdaptering.fragmentTitle.get(position))).attach();
+
+
+
+
+
+
+
+
+
+
+
             // ✅ Prevent dismissing when clicking outside
             dialogCubaoCampusEnrollmentViewProgram.setCancelable(false);
             dialogCubaoCampusEnrollmentViewProgram.setCanceledOnTouchOutside(false);
@@ -65,4 +103,35 @@ public class AdmissionEnrollmentProcedureSubFragment extends Fragment  {
             dialogCubaoCampusEnrollmentViewProgram.show();
         });
     }
+
+    class VPAdaptering extends FragmentStateAdapter {
+        private final ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
+        private final ArrayList<String> fragmentTitle = new ArrayList<>();
+
+        public VPAdaptering(@NonNull FragmentManager fm, @NonNull Lifecycle lifecycle) {
+            super(fm, lifecycle);
+        }
+
+        @NonNull
+        @Override
+        public Fragment createFragment(int position) {
+            return fragmentArrayList.get(position);
+        }
+
+        @Override
+        public int getItemCount() {
+            return fragmentArrayList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            fragmentArrayList.add(fragment);
+            fragmentTitle.add(title);
+        }
+
+        @Nullable
+        public CharSequence getPageTitle(int position) {
+            return fragmentTitle.get(position);
+        }
+    }
+
 }
