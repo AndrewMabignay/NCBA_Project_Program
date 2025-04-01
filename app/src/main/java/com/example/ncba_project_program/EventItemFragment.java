@@ -66,6 +66,15 @@ public class EventItemFragment extends Fragment {
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.activity_main_event_item_sub_fragment_dialog, null);
 
+        builder.setView(dialogView);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+        if (alertDialog.getWindow() != null) {
+            alertDialog.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+            alertDialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+        }
+
         TextView titleViewDialog = dialogView.findViewById(R.id.textTitle);
         TextView dateViewDialog = dialogView.findViewById(R.id.textDate);
         TextView descriptionViewDialog = dialogView.findViewById(R.id.textDescription);
@@ -271,14 +280,9 @@ public class EventItemFragment extends Fragment {
         descriptionViewDialog.setText(description);
         imageViewDialog.setImageResource(imageResId);
 
-        builder.setView(dialogView);
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
 
-        if (alertDialog.getWindow() != null) {
-            alertDialog.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
-            alertDialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
-        }
+
+
 
         LinearLayout closeButton = dialogView.findViewById(R.id.CloseButton);
         closeButton.setOnClickListener(v -> {
