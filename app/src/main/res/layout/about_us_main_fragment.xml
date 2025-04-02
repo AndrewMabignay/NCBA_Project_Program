@@ -19,279 +19,342 @@
             tools:ignore="UseAppTint"
         />
 
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:nestedScrollingEnabled="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
         >
-
-            <!-- ============================= FIRST ROW ============================= -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:paddingHorizontal="20dp"
-            >
-
-                <!-- ========= 1. THE INSTITUTION ========= -->
-                <LinearLayout
-                    android:id="@+id/TheInstitution"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:clickable="true"
-                    android:background="@drawable/home_button"
-                    android:paddingVertical="45dp"
-                    android:paddingHorizontal="20dp"
-                    android:layout_gravity="center"
                 >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="\uf19c"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        android:textAlignment="center"
-                    />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="THE INSTITUTION"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textSize="11sp"
-                        android:textColor="@color/lightWhite"
-                        android:letterSpacing="0.05"
-                        android:textAlignment="center"
-                        android:layout_gravity="center"
-                    />
-                </LinearLayout>
-
-                <!-- ========= 2. BRIEF HISTORY ========= -->
+                <!-- ============================= FIRST ROW ============================= -->
                 <LinearLayout
-                    android:id="@+id/BriefHistory"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:clickable="true"
-                    android:background="@drawable/home_button"
-                    android:paddingVertical="45dp"
                     android:paddingHorizontal="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="\uf1da"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        android:textAlignment="center"
-                    />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BRIEF HISTORY"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textSize="11sp"
-                        android:textColor="@color/lightWhite"
-                        android:letterSpacing="0.05"
-                        android:textAlignment="center"
-                        android:layout_gravity="center"
-                    />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- ============================= SECOND ROW ============================= -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingHorizontal="20dp"
-                android:layout_marginTop="25dp"
-            >
-
-                <!-- ========= 3. VISION, MISSION AND CORE VALUES ========= -->
-                <LinearLayout
-                    android:id="@+id/VisionMissionCoreValues"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:clickable="true"
-                    android:background="@drawable/home_button"
-                    android:paddingVertical="45dp"
-                    android:paddingHorizontal="20dp"
-                    android:layout_gravity="center"
                     >
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <!-- ========= 1. THE INSTITUTION ========= -->
+                    <LinearLayout
+                        android:id="@+id/TheInstitution"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="\uf06e"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        android:textAlignment="center"
-                    />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="VISION &amp; MISSION"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textSize="11sp"
-                        android:textColor="@color/lightWhite"
-                        android:letterSpacing="0.05"
-                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
                         android:layout_gravity="center"
-                        />
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf19c"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="THE INSTITUTION"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+                    <!-- ========= 2. BRIEF HISTORY ========= -->
+                    <LinearLayout
+                        android:id="@+id/BriefHistory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf1da"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BRIEF HISTORY"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
 
-                <!-- ========= 4. NCBA HYMN ========= -->
+                <!-- ============================= SECOND ROW ============================= -->
                 <LinearLayout
-                    android:id="@+id/NCBAHymn"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:clickable="true"
-                    android:background="@drawable/home_button"
-                    android:paddingVertical="45dp"
                     android:paddingHorizontal="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
                     >
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <!-- ========= 3. VISION, MISSION AND CORE VALUES ========= -->
+                    <LinearLayout
+                        android:id="@+id/VisionMissionCoreValues"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="\uf001"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        android:textAlignment="center"
-                    />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="NCBA HYMN"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textSize="11sp"
-                        android:textColor="@color/lightWhite"
-                        android:letterSpacing="0.05"
-                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
                         android:layout_gravity="center"
-                    />
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf06e"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VISION &amp; MISSION"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+                    <!-- ========= 4. NCBA HYMN ========= -->
+                    <LinearLayout
+                        android:id="@+id/NCBAHymn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf001"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NCBA HYMN"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-            <!-- ============================= THIRD ROW ============================= -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingHorizontal="20dp"
-                android:layout_marginTop="25dp"
-            >
-
-                <!-- ========= 5. RECOGNITION ========= -->
+                <!-- ============================= THIRD ROW ============================= -->
                 <LinearLayout
-                    android:id="@+id/Recognition"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:clickable="true"
-                    android:background="@drawable/home_button"
-                    android:paddingVertical="45dp"
                     android:paddingHorizontal="20dp"
-                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
                     >
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <!-- ========= 5. RECOGNITION ========= -->
+                    <LinearLayout
+                        android:id="@+id/Recognition"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="\uf091"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        android:textAlignment="center"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RECOGNITIONS"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textSize="11sp"
-                        android:textColor="@color/lightWhite"
-                        android:letterSpacing="0.05"
-                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
                         android:layout_gravity="center"
-                        />
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf091"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RECOGNITIONS"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+                    <!-- ========= 6. CAREER ========= -->
+                    <LinearLayout
+                        android:id="@+id/Career"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf0b1"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CAREERS"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
 
-                <!-- ========= 6. CAREER ========= -->
+                <!-- ============================= FOURTH ROW ============================= -->
                 <LinearLayout
-                    android:id="@+id/Career"
-                    android:layout_width="0dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:clickable="true"
-                    android:background="@drawable/home_button"
-                    android:paddingVertical="45dp"
                     android:paddingHorizontal="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                >
+                    android:layout_marginTop="25dp"
+                    >
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <!-- ========= 5. RECOGNITION ========= -->
+                    <LinearLayout
+                        android:id="@+id/Facilities"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="\uf0b1"
-                        android:textColor="@color/lightWhite"
-                        android:textSize="30dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/font_awesome_6_free_solid_900"
-                        android:textAlignment="center"
-                    />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CAREERS"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:textSize="11sp"
-                        android:textColor="@color/lightWhite"
-                        android:letterSpacing="0.05"
-                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/home_button"
+                        android:paddingVertical="45dp"
+                        android:paddingHorizontal="20dp"
                         android:layout_gravity="center"
-                    />
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\uf041"
+                            android:textColor="@color/lightWhite"
+                            android:textSize="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/font_awesome_6_free_solid_900"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FACILITIES"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="11sp"
+                            android:textColor="@color/lightWhite"
+                            android:letterSpacing="0.05"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+
                 </LinearLayout>
+
             </LinearLayout>
-        </LinearLayout>
+        </ScrollView>
+
     </FrameLayout>
 </LinearLayout>

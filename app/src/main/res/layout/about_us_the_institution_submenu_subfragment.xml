@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/lightWhiteGreen"
 >
     <TextView
         android:layout_width="match_parent"
@@ -11,7 +12,7 @@
         android:text="THE INSTITUTIONS"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="17dp"
+        android:textSize="15dp"
         android:background="@drawable/shadow_subheader_box"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
@@ -26,8 +27,8 @@
         android:fadeScrollbars="false"
         android:scrollbarSize="2dp"
         android:nestedScrollingEnabled="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp"
     >
         <LinearLayout
             android:layout_width="match_parent"

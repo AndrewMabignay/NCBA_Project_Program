@@ -16,6 +16,7 @@
         android:clickable="true"
         android:focusable="true"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -38,15 +39,34 @@
         />
     </LinearLayout>
 
+    <!-- MASTER IN PUBLIC ADMINISTRATION (MPA) [TITLE] -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MASTER IN PUBLIC ADMINISTRATION (MPA)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/shadow_subheader_box"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="30dp"
+        android:letterSpacing="0.03"
+        android:lineHeight="33dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        />
+
     <!-- CONTENTS -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbarThumbVertical="@drawable/custom_scrollbar"
         android:fadeScrollbars="false"
-        android:scrollbarSize="5dp"
+        android:scrollbarSize="2dp"
         android:nestedScrollingEnabled="true"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="25dp"
         >
         <LinearLayout
@@ -54,25 +74,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            <!-- MASTER IN PUBLIC ADMINISTRATION (MPA) [TITLE] -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MASTER IN PUBLIC ADMINISTRATION (MPA)"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:background="@drawable/shadow_subheader_box"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-                android:letterSpacing="0.03"
-                android:lineHeight="33dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="2"
-                android:shadowDy="2"
-                android:shadowRadius="4"
-            />
+
 
             <!-- CENTER FOR GRADUATE STUDIES IN BUSINESS AND MANAGEMENT [TITLE] -->
             <TextView
@@ -83,7 +85,7 @@
                 android:textColor="@color/white"
                 android:textSize="13sp"
                 android:background="@drawable/shadow_subheader_box_second"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
                 android:paddingHorizontal="30dp"
@@ -99,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_medium"
                 android:justificationMode="inter_word"
                 android:lineHeight="30dp"

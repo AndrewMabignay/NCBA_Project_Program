@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
         >
             <!-- ============================= FIRST SECTION ============================= -->
             <androidx.cardview.widget.CardView

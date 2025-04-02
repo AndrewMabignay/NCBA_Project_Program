@@ -11,7 +11,7 @@
         android:text="GRADUATE PROGRAMS"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="17dp"
+        android:textSize="15dp"
         android:background="@drawable/shadow_subheader_box"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:scrollbarThumbVertical="@drawable/custom_scrollbar"
         android:fadeScrollbars="false"
-        android:scrollbarSize="3dp"
+        android:scrollbarSize="2dp"
         android:nestedScrollingEnabled="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="35dp"
@@ -42,7 +42,7 @@
                 android:text="CENTER FOR GRADUATE STUDIES IN  BUSINESS AND MANAGEMENT"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14sp"
                 android:background="@drawable/shadow_subheader_box_second"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
@@ -63,7 +63,7 @@
                 android:text="PROGRAM OBJECTIVES"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14sp"
                 android:background="@drawable/shadow_subheader_box_second"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
@@ -96,12 +96,11 @@
                 android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
                 android:lineHeight="28dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
-                android:paddingLeft="4dp"
-            />
+                android:paddingLeft="10dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -110,12 +109,11 @@
                 android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
                 android:lineHeight="28dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
-                android:paddingLeft="4dp"
-            />
+                android:paddingLeft="10dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,11 +122,10 @@
                 android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
                 android:lineHeight="28dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
-                android:paddingLeft="4dp"
+                android:paddingLeft="10dp"
             />
 
             <TextView
@@ -138,11 +135,10 @@
                 android:textSize="13sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_medium"
-                android:justificationMode="inter_word"
                 android:lineHeight="28dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginHorizontal="30dp"
-                android:paddingLeft="4dp"
+                android:paddingLeft="10dp"
             />
 
             <!-- ACADEMIC PROGRAMS [TITLE] -->
@@ -152,7 +148,7 @@
                 android:text="ACADEMIC PROGRAMS"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="14sp"
                 android:background="@drawable/shadow_subheader_box_second"
                 android:fontFamily="@font/poppins_semibold"
                 android:paddingVertical="20dp"
