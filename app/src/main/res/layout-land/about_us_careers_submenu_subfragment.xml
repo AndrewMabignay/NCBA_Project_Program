@@ -6,23 +6,6 @@
     android:orientation="vertical"
     android:background="@color/lightWhiteGreen"
 >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CAREERS"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="17sp"
-        android:background="@drawable/shadow_subheader_box"
-        android:fontFamily="@font/poppins_semibold"
-        android:layout_marginTop="20dp"
-        android:paddingVertical="20dp"
-        android:paddingHorizontal="50dp"
-        android:letterSpacing="0.03"
-        android:lineHeight="35dp"
-    />
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,8 +19,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="15dp"
         >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAREERS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="20dp"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="50dp"
+                android:layout_marginBottom="15dp"
+                android:letterSpacing="0.03"
+                android:lineHeight="35dp"
+                />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,15 +81,15 @@
                 app:tabIndicatorAnimationDuration="250"
                 >
                 <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TEACHING"
                     android:textColor="@color/white"
-                      android:fontFamily="@font/poppins_medium"
+                    android:fontFamily="@font/poppins_medium"
                 />
 
                 <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="NON-TEACHING"
                     android:textColor="@color/white"

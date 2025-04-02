@@ -21,7 +21,9 @@ public class AboutUsRecognitionsSubFragment extends Fragment {
     private ImageView imageView;
     private final int[] images = {
             R.drawable.pacu,
-            R.drawable.pacucoa
+            R.drawable.pacucoa,
+            R.drawable.peac,
+            R.drawable.deped
     };
     private int currentIndex = 0;
     private Handler handler;

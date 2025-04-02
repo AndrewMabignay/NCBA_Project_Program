@@ -135,6 +135,16 @@
     </string>
     <!-- 1.5. ====================== ABOUT US PROGRAMS | RECOGNITIONS ====================== -->
     <string name="AboutUsRecognitionsOneStatement"><b>National College of Business and Arts (NCBA)</b> is a member of <b>Philippine Association of Colleges and Universities (PACU)</b> and accredited by the <b>Philippine Association of Colleges and Universities Commission on Accreditation, Inc. (PACUCOA)</b>. This signifies that NCBA has the formal certificate of recognition for our Bachelor of Science in Business Administration program as possessing “high level of quality or excellence based on the analysis of the merits of its educational operations in attaining its objectives and its role in the community that it serves” aligned with the vision of our College.</string>
+    <string name="AboutUsRecognitionsTwoStatement"><b>National College of Business and Arts</b> is a participating institution of <b>Private Education Assistance Committee (PEAC)</b>. PEAC is the trustee of the Fund for Assistance to Private Education (FAPE), a perpetual fund created to provide assistance to private education in the country through <b>Educational Service Contracting (ESC)</b>. ESC is a program by the Department of Education (DepEd) to decongest overcrowded public junior high schools. To be a participating institution, NCBA must meet or exceed the minimum standards for quality education set by DepEd.  NCBA is visited and recertified as a participating institution every year to ensure that our education maintains the standard set by DepEd.</string>
+    <string name="AboutUsRecognitionsThreeStatement">Currently, ESC recipient award is Php9,000 per student for Calabarzon and PHP13,000 per student for NCR.</string>
+    <string name="AboutUsRecognitionsFourStatement">Public high school student who wants to enroll in a private institution is encouraged and allowed by DepEd. For this purpose, NCBA is given a voucher in the amount of Php17,500 per student for Calabarzon and Php22,500 per student for NCR.</string>
+    <string name="AboutUsRecognitionsFiveStatement">To maintain these scholarships offered by DepEd, NCBA must continuously show improvement and sustain high quality of education.</string>
+
+
+    <string name="AboutUsCareerOneStatement">
+        Please email your resume and credentials to <b>recruitment@ncba.edu.ph</b> or call us at <b>8913–8785 local 123</b>.
+    </string>
+
 
 
     <!-- 2. ====================== ACADEMIC PROGRAMS ====================== -->

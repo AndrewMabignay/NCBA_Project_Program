@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightWhite"
+    android:background="@color/lightWhiteGreen"
 >
     <TextView
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:text="COLLEGE FACULTY"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="17sp"
+        android:textSize="14sp"
         android:background="@drawable/shadow_subheader_box"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
@@ -62,6 +62,20 @@
                 android:lineHeight="28dp"
                 android:paddingBottom="15dp"
                 android:text="Updated CV / Resume, TOR, Diploma, PRC License (if applicable)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:justificationMode="inter_word"
+                android:lineHeight="28dp"
+                android:paddingBottom="15dp"
+                android:text="@string/AboutUsCareerOneStatement"
                 android:textColor="@color/black"
                 android:textSize="13sp"
             />
