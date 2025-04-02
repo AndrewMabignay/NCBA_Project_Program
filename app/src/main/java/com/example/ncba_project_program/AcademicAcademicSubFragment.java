@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class AcademicAcademicSubFragment extends Fragment {
     private ImageView academicImages;
@@ -78,25 +79,30 @@ public class AcademicAcademicSubFragment extends Fragment {
     private void showImageDialog() {
         if (getContext() == null || getActivity() == null) return;
 
-        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(getContext());
+        handler.removeCallbacks(runnable);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
         LayoutInflater inflater = getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.about_us_brief_history_image_dialog_submenu, null);
+        View dialogView = inflater.inflate(R.layout.academic_academic_image_dialog_submenu, null);
         builder.setView(dialogView);
 
-        ImageView dialogImageView = dialogView.findViewById(R.id.dialogImageView);
-        if (dialogImageView != null) {
-            dialogImageView.setImageResource(academicImageList[currentIndex]);
-        }
+        ViewPager2 viewPager = dialogView.findViewById(R.id.imageViewPager);
+        ImagePageAdapter adapter = new ImagePageAdapter(requireContext(), academicImageList);
+        viewPager.setAdapter(adapter);
+        viewPager.setCurrentItem(currentIndex, false);
 
         AlertDialog dialog = builder.create();
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
+        }
 
-        dialog.getWindow().setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.setOnDismissListener(dialogInterface -> {
+            handler.post(runnable);
+        });
 
-        // Enable dismissal when clicking outside
-        dialog.setCancelable(true);
-        dialog.setCanceledOnTouchOutside(true);
         dialog.show();
     }
+
 
     private void AddInteraction() {
         startImageTransition();

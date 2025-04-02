@@ -72,27 +72,56 @@ public class MainFragment extends Fragment {
         adapter = new EventPagerAdapter(requireActivity(), eventList);
         viewPager2.setAdapter(adapter);
 
-        viewPager2.setPageTransformer(new ViewPager2.PageTransformer() {
+        // Auto-scroll logic with user interaction handling
+        // Auto-scroll logic with user interaction handling
+        // Declare handler globally to prevent errors
+        Handler scrollHandler = new Handler();
+
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            private boolean userInteracted = false;
+            private Runnable autoScrollRunnable = new Runnable() {
+                @Override
+                public void run() {
+                    if (!userInteracted && viewPager2.getAdapter() != null) {
+                        int itemCount = viewPager2.getAdapter().getItemCount();
+                        int nextPage = (currentPage + 1) % itemCount;
+
+                        // Simulate smooth dragging instead of instant jump
+                        viewPager2.beginFakeDrag();
+                        viewPager2.fakeDragBy(-viewPager2.getWidth() / 30f); // Slow movement
+                        viewPager2.postDelayed(() -> {
+                            viewPager2.endFakeDrag();
+                            viewPager2.setCurrentItem(nextPage, true);
+                        }, 800); // Slow transition delay
+
+                        currentPage = nextPage;
+                        scrollHandler.postDelayed(this, 5000); // 5 seconds before next scroll
+                    }
+                }
+            };
+
             @Override
-            public void transformPage(@NonNull View page, float position) {
-                page.setAlpha(1 - Math.abs(position)); // Fade effect
-                page.setTranslationX(-position * page.getWidth() * 0.2f); // Horizontal slide
+            public void onPageSelected(int position) {
+                currentPage = position;
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                if (state == ViewPager2.SCROLL_STATE_DRAGGING) {
+                    userInteracted = true;
+                    scrollHandler.removeCallbacks(autoScrollRunnable);
+                } else if (state == ViewPager2.SCROLL_STATE_IDLE && userInteracted) {
+                    userInteracted = false;
+                    scrollHandler.postDelayed(autoScrollRunnable, 5000);
+                }
             }
         });
 
-        // Start auto-scroll functionality without using Handler
-        viewPager2.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                int itemCount = viewPager2.getAdapter().getItemCount();
-                if (currentPage >= itemCount) {
-                    currentPage = 0; // Loop back to the first item when reaching the last
-                }
+        // Start auto-scroll after initial delay
+        scrollHandler.postDelayed(autoScrollRunnable, 5000);
 
-                viewPager2.setCurrentItem(currentPage++, true); // Smooth transition to next page
-                viewPager2.postDelayed(this, 4000); // Delay of 4 seconds for smooth transition
-            }
-        }, 2000);
+
+
 
     }
 
