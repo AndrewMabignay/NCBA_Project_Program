@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightWhiteGreen"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="2dp"
+        android:nestedScrollingEnabled="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="25dp"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="THE INSTITUTIONS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@drawable/shadow_subheader_box"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="20dp"
+                android:paddingVertical="20dp"
+                android:letterSpacing="0.03"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:lineHeight="30dp"
+                android:text="@string/aboutUsTheInstitutionStatementOne"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/aboutUsTheInstitutionStatementTwo"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/aboutUsTheInstitutionStatementThree"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textAlignment="viewStart"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:lineHeight="30dp"
+                android:text="@string/aboutUsTheInstitutionStatementFour"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textAlignment="viewStart"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

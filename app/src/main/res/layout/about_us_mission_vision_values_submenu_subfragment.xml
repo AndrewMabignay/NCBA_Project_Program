@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightWhite"
+    android:background="@color/lightWhiteGreen"
 >
     <TextView
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:text="MISSION AND VISION WITH CORE VALUES"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:background="@drawable/shadow_subheader_box"
         android:fontFamily="@font/poppins_semibold"
         android:layout_marginTop="20dp"
@@ -25,16 +25,16 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="25dp"
         android:fadeScrollbars="false"
         android:nestedScrollingEnabled="true"
-        android:scrollbarSize="5dp"
+        android:scrollbarSize="2dp"
         android:scrollbarThumbVertical="@drawable/custom_scrollbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="25dp"
             android:orientation="vertical">
 
             <!--  1. MISSION -->
@@ -48,7 +48,7 @@
                 <!-- Left Separator Line -->
                 <View
                     android:layout_width="0dp"
-                    android:layout_height="3dp"
+                    android:layout_height="2dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:background="@color/DarkGreen" />
@@ -70,12 +70,13 @@
                     android:text="MISSION"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="14sp"
+                />
 
                 <!-- Right Separator Line -->
                 <View
                     android:layout_width="0dp"
-                    android:layout_height="3dp"
+                    android:layout_height="2dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:background="@color/DarkGreen" />
@@ -107,7 +108,7 @@
                 <!-- Left Separator Line -->
                 <View
                     android:layout_width="0dp"
-                    android:layout_height="3dp"
+                    android:layout_height="2dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:background="@color/DarkGreen" />
@@ -129,12 +130,12 @@
                     android:text="VISION"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
 
                 <!-- Right Separator Line -->
                 <View
                     android:layout_width="0dp"
-                    android:layout_height="3dp"
+                    android:layout_height="2dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:background="@color/DarkGreen" />
@@ -166,7 +167,7 @@
                 <!-- Left Separator Line -->
                 <View
                     android:layout_width="0dp"
-                    android:layout_height="3dp"
+                    android:layout_height="2dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:background="@color/DarkGreen" />
@@ -188,12 +189,12 @@
                     android:text="CORE VALUES"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
 
                 <!-- Right Separator Line -->
                 <View
                     android:layout_width="0dp"
-                    android:layout_height="3dp"
+                    android:layout_height="2dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
                     android:background="@color/DarkGreen" />
@@ -211,7 +212,8 @@
                 android:text="Commitment\nIntegrity\nService to all\nAccountability"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+            />
 
 
         </LinearLayout>

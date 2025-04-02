@@ -16,6 +16,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class AboutUsBriefHistorySubFragment extends Fragment {
     private ImageView imageView;
@@ -68,6 +69,37 @@ public class AboutUsBriefHistorySubFragment extends Fragment {
         }
     }
 
+    private void showImageDialog() {
+        if (getContext() == null || getActivity() == null) return;
+
+        handler.removeCallbacks(runnable);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.about_us_brief_history_image_dialog_submenu, null);
+        builder.setView(dialogView);
+
+        ViewPager2 viewPager = dialogView.findViewById(R.id.imageViewPagerBriefHistory);
+        ImagePageAdapter adapter = new ImagePageAdapter(requireContext(), images);
+        viewPager.setAdapter(adapter);
+        viewPager.setCurrentItem(currentIndex, false);
+
+
+
+
+
+        AlertDialog dialog = builder.create();
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
+        }
+
+        dialog.setOnDismissListener(dialogInterface -> {
+            handler.post(runnable);
+        });
+
+        dialog.show();
+    }
+
     private void startImageTransition() {
         runnable = () -> {
             if (imageView == null) return;
@@ -103,31 +135,30 @@ public class AboutUsBriefHistorySubFragment extends Fragment {
             roundedDrawable.setCornerRadius(30f);
             roundedDrawable.setAntiAlias(true);
 
-            imageView.setBackgroundResource(R.drawable.rounded_shadow);
             imageView.setImageDrawable(roundedDrawable);
 
             // Ensure the image fills the ImageView properly
-            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         }
     }
 
 
-    private void showImageDialog() {
-        if (getContext() == null || getActivity() == null) return;
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        LayoutInflater inflater = getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.about_us_brief_history_image_dialog_submenu, null);
-        builder.setView(dialogView);
-
-        ImageView dialogImageView = dialogView.findViewById(R.id.dialogImageView);
-        if (dialogImageView != null) {
-            dialogImageView.setImageResource(images[currentIndex]);
-        }
-
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
+//    private void showImageDialog() {
+//        if (getContext() == null || getActivity() == null) return;
+//
+//        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+//        LayoutInflater inflater = getLayoutInflater();
+//        View dialogView = inflater.inflate(R.layout.about_us_brief_history_image_dialog_submenu, null);
+//        builder.setView(dialogView);
+//
+//        ImageView dialogImageView = dialogView.findViewById(R.id.dialogImageView);
+//        if (dialogImageView != null) {
+//            dialogImageView.setImageResource(images[currentIndex]);
+//        }
+//
+//        AlertDialog dialog = builder.create();
+//        dialog.show();
+//    }
 
     @Override
     public void onDestroyView() {
