@@ -311,7 +311,7 @@
                     android:layout_marginTop="25dp"
                     >
 
-                    <!-- ========= 5. RECOGNITION ========= -->
+                    <!-- ========= 7. FACILITIES ========= -->
                     <LinearLayout
                         android:id="@+id/Facilities"
                         android:layout_width="0dp"
