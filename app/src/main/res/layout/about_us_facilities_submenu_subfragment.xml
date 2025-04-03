@@ -206,585 +206,358 @@
                         </LinearLayout>
                     </FrameLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-
-
-
-
-
-            <!-- 3. GYMNASIUM -->
-            <LinearLayout
-                android:id="@+id/GynasiumFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-            >
-                <FrameLayout
+                <!-- 3. GYMNASIUM FACILITIES -->
+                <LinearLayout
+                    android:id="@+id/GymnasiumFacilities"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginTop="12dp"
                     >
-                    <androidx.cardview.widget.CardView
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true"
                         >
-
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/facilities_gymnasium_six"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/facilities_gymnasium_one"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
+                            android:stateListAnimator="@anim/image_hover"
                             />
 
-                    </androidx.cardview.widget.CardView>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf70c"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Gymnasium"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <!-- 4. CANTEEN -->
-            <LinearLayout
-                android:id="@+id/CanteenFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                >
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    >
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true"
-                        >
-
-                        <ImageView
+                        <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf70c"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gymansium"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 4. CANTEEN FACILITIES -->
+                <LinearLayout
+                    android:id="@+id/CanteenFacilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginTop="12dp"
+                    >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/facilities_canteen_one"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
+                            android:stateListAnimator="@anim/image_hover"
                             />
 
-                    </androidx.cardview.widget.CardView>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf2e7"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Canteen"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <!-- 5. LIBRARY -->
-            <LinearLayout
-                android:id="@+id/LibraryFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                >
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    >
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true"
-                        >
-
-                        <ImageView
+                        <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf2e7"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Canteen"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 5. LIBRARY FACILITIES -->
+                <LinearLayout
+                    android:id="@+id/LibraryFacilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginTop="12dp"
+                    >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/facilities_library_one"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
+                            android:stateListAnimator="@anim/image_hover"
                             />
 
-                    </androidx.cardview.widget.CardView>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf02d"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Library"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <!-- 6. CLASSROOMS -->
-            <LinearLayout
-                android:id="@+id/ClassRoomFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                >
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    >
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true"
-                        >
-
-                        <ImageView
+                        <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf02d"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Library"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 6. CLASSROOM FACILITIES -->
+                <LinearLayout
+                    android:id="@+id/ClassroomFacilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginTop="12dp"
+                    >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:src="@drawable/facilities_classrooms_one"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
+                            android:stateListAnimator="@anim/image_hover"
                             />
 
-                    </androidx.cardview.widget.CardView>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf51b"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Classrooms"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-
-
-            <!-- 1. CHURCH FACILITIES -->
-            <LinearLayout
-                android:id="@+id/ChurchFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-            >
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    >
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true">
-
-                        <ImageView
+                        <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/facilities_church_four"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
-                        />
-
-                    </androidx.cardview.widget.CardView>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf51d"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
+                            android:background="@drawable/dark_overlay_effect"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Church"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <!-- 2. MINI THEATER -->
-            <LinearLayout
-                android:id="@+id/MiniTheaterFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-            >
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    >
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true">
-
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/facilities_church_four"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
-                        />
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf51b"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
 
-                    </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Classroom"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
 
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf008"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Mini Theater"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
-                            />
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <!-- 3. CLINIC -->
-            <LinearLayout
-                android:id="@+id/ClinicFacilities"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:clickable="true"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-            >
-                <FrameLayout
+                <!-- 7. CHURCH FACILITIES -->
+                <LinearLayout
+                    android:id="@+id/ChurchFacilities"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    >
-                    <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:layout_marginTop="12dp"
+                >
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="0dp"
-                        app:cardBackgroundColor="@android:color/transparent"
-                        android:clipChildren="true"
-                        android:clipToPadding="true">
-
+                        >
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/facilities_clinic_one"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/facilities_church_one"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
-                        />
-
-                    </androidx.cardview.widget.CardView>
-
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/dark_overlay_effect"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="\uf008"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/font_awesome_6_free_solid_900"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginBottom="12dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
+                            android:stateListAnimator="@anim/image_hover"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Mini Theater"
-                            android:textColor="@color/lightWhite"
-                            android:textSize="15dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:layout_gravity="bottom|start"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginBottom="12dp"
-                            android:letterSpacing="0.02"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="2"
-                            android:shadowDy="2"
-                            android:shadowRadius="3"
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dark_overlay_effect"
                             />
-                    </LinearLayout>
-                </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="\uf51d"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/font_awesome_6_free_solid_900"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginBottom="12dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Church"
+                                android:textColor="@color/lightWhite"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:layout_gravity="bottom|start"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:letterSpacing="0.02"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="3"
+                                />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
             </LinearLayout>
+
+
+
+
+
+
 
 
 

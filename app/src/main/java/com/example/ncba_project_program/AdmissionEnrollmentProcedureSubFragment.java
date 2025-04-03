@@ -64,28 +64,77 @@ public class AdmissionEnrollmentProcedureSubFragment extends Fragment  {
                 dialogCubaoCampusEnrollmentViewProgram.dismiss();
             });
 
-            // Inside AddInteraction(), update the adapter class:
-            ViewPager2 viewPager = dialogCubaoCampusEnrollmentView.findViewById(R.id.viewpagerEnrollmentTwo);
-            TabLayout careersTabLayout = dialogCubaoCampusEnrollmentView.findViewById(R.id.enrollmentCubaoTabLayout);
+            // ✅ Prevent dismissing when clicking outside
+            dialogCubaoCampusEnrollmentViewProgram.setCancelable(false);
+            dialogCubaoCampusEnrollmentViewProgram.setCanceledOnTouchOutside(false);
 
-            // Use FragmentStateAdapter for ViewPager2
-            VPAdaptering vpAdaptering = new VPAdaptering(getChildFragmentManager(), getLifecycle());
-            vpAdaptering.addFragment(AdmissionCubaoCollegeEnrollmentProcedureSubMenuFragment.newInstance(), "COLLEGE");
-            vpAdaptering.addFragment(AdmissionCubaoGraduateStudiesEnrollmentProcedureSubMenuFragment.newInstance(), "GRADUATE STUDIES");
-            viewPager.setAdapter(vpAdaptering);
+            // ✅ Handle Back Button Press
+            dialogCubaoCampusEnrollmentViewProgram.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogCubaoCampusEnrollmentViewProgram.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
 
-            // Use TabLayoutMediator for ViewPager2 compatibility
-            new TabLayoutMediator(careersTabLayout, viewPager, (tab, position) -> tab.setText(vpAdaptering.fragmentTitle.get(position))).attach();
+            dialogCubaoCampusEnrollmentViewProgram.show();
+        });
 
+        taytayCampusEnrollment.setOnClickListener(e -> {
+            if (getActivity() == null) return; // ✅ Prevents null context issues
 
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            LayoutInflater inflater = LayoutInflater.from(getContext()); // ✅ Ensures correct layout inflater
+            View dialogCubaoCampusEnrollmentView = inflater.inflate(R.layout.admission_enrollment_procedures_cubao_campus_dialog_submenu, null);
+            builder.setView(dialogCubaoCampusEnrollmentView);
 
+            AlertDialog dialogCubaoCampusEnrollmentViewProgram = builder.create();
 
+            if (dialogCubaoCampusEnrollmentViewProgram.getWindow() != null) {
+                dialogCubaoCampusEnrollmentViewProgram.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+                dialogCubaoCampusEnrollmentViewProgram.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+            }
 
+            LinearLayout closeButton = dialogCubaoCampusEnrollmentView.findViewById(R.id.CloseButton);
+            closeButton.setOnClickListener(v -> {
+                dialogCubaoCampusEnrollmentViewProgram.dismiss();
+            });
 
+            // ✅ Prevent dismissing when clicking outside
+            dialogCubaoCampusEnrollmentViewProgram.setCancelable(false);
+            dialogCubaoCampusEnrollmentViewProgram.setCanceledOnTouchOutside(false);
 
+            // ✅ Handle Back Button Press
+            dialogCubaoCampusEnrollmentViewProgram.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogCubaoCampusEnrollmentViewProgram.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
 
+            dialogCubaoCampusEnrollmentViewProgram.show();
+        });
 
+        fairviewCampusEnrollment.setOnClickListener(e -> {
+            if (getActivity() == null) return; // ✅ Prevents null context issues
 
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            LayoutInflater inflater = LayoutInflater.from(getContext()); // ✅ Ensures correct layout inflater
+            View dialogCubaoCampusEnrollmentView = inflater.inflate(R.layout.admission_enrollment_procedures_cubao_campus_dialog_submenu, null);
+            builder.setView(dialogCubaoCampusEnrollmentView);
+
+            AlertDialog dialogCubaoCampusEnrollmentViewProgram = builder.create();
+
+            if (dialogCubaoCampusEnrollmentViewProgram.getWindow() != null) {
+                dialogCubaoCampusEnrollmentViewProgram.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+                dialogCubaoCampusEnrollmentViewProgram.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+            }
+
+            LinearLayout closeButton = dialogCubaoCampusEnrollmentView.findViewById(R.id.CloseButton);
+            closeButton.setOnClickListener(v -> {
+                dialogCubaoCampusEnrollmentViewProgram.dismiss();
+            });
 
             // ✅ Prevent dismissing when clicking outside
             dialogCubaoCampusEnrollmentViewProgram.setCancelable(false);

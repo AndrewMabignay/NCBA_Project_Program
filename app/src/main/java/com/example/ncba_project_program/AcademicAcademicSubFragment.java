@@ -20,7 +20,6 @@ public class AcademicAcademicSubFragment extends Fragment {
             R.drawable.computer_lab_one, R.drawable.computer_lab_two,
             R.drawable.library_lab_one, R.drawable.gym_second_image,
             R.drawable.computer_lab_three, R.drawable.library_two,
-            R.drawable.pusa_ni_river, R.drawable.redhorse
     };
     private int currentIndex = 0;
     private Handler handler;

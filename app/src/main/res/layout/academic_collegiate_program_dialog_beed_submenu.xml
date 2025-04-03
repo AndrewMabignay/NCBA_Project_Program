@@ -93,6 +93,62 @@
                 android:shadowRadius="4"
             />
 
+            <HorizontalScrollView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                android:layout_gravity="center"
+                android:paddingHorizontal="20dp"
+            >
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/secondary_education_one"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/secondary_education_two"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/secondary_education_three"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/secondary_education_four"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <!-- Add more images if needed -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

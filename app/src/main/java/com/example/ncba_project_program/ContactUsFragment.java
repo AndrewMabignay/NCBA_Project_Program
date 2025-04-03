@@ -1,5 +1,6 @@
 package com.example.ncba_project_program;
 
+import android.app.AlertDialog;
 import android.graphics.Outline;
 
 import android.net.ConnectivityManager;
@@ -9,6 +10,7 @@ import android.content.Context;
 
 
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,6 +70,112 @@ public class ContactUsFragment extends Fragment {
     }
 
     private void AddInteraction(Bundle savedInstanceState) {
+        ncbaCubao.setOnClickListener(e -> {
+            if (getActivity() == null) return; // ✅ Prevents null context issues
 
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            LayoutInflater inflater = LayoutInflater.from(getContext()); // ✅ Ensures correct layout inflater
+            View dialogBusinessAdView = inflater.inflate(R.layout.contactus_cubao_campus_dialog_submenu_subfragment, null);
+            builder.setView(dialogBusinessAdView);
+
+            AlertDialog dialogBusinessAd = builder.create();
+
+            if (dialogBusinessAd.getWindow() != null) {
+                dialogBusinessAd.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+                dialogBusinessAd.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+            }
+
+            LinearLayout closeButton = dialogBusinessAdView.findViewById(R.id.CloseButton);
+            closeButton.setOnClickListener(v -> {
+                dialogBusinessAd.dismiss();
+            });
+
+            // ✅ Prevent dismissing when clicking outside
+            dialogBusinessAd.setCancelable(false);
+            dialogBusinessAd.setCanceledOnTouchOutside(false);
+
+            // ✅ Handle Back Button Press
+            dialogBusinessAd.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogBusinessAd.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
+
+            dialogBusinessAd.show();
+        });
+
+        ncbaFairview.setOnClickListener(e -> {
+            if (getActivity() == null) return; // ✅ Prevents null context issues
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            LayoutInflater inflater = LayoutInflater.from(getContext()); // ✅ Ensures correct layout inflater
+            View dialogBusinessAdView = inflater.inflate(R.layout.contactus_fairview_campus_dialog_submenu_subfragment, null);
+            builder.setView(dialogBusinessAdView);
+
+            AlertDialog dialogBusinessAd = builder.create();
+
+            if (dialogBusinessAd.getWindow() != null) {
+                dialogBusinessAd.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+                dialogBusinessAd.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+            }
+
+            LinearLayout closeButton = dialogBusinessAdView.findViewById(R.id.CloseButton);
+            closeButton.setOnClickListener(v -> {
+                dialogBusinessAd.dismiss();
+            });
+
+            // ✅ Prevent dismissing when clicking outside
+            dialogBusinessAd.setCancelable(false);
+            dialogBusinessAd.setCanceledOnTouchOutside(false);
+
+            // ✅ Handle Back Button Press
+            dialogBusinessAd.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogBusinessAd.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
+
+            dialogBusinessAd.show();
+        });
+
+        ncbaTaytay.setOnClickListener(e -> {
+            if (getActivity() == null) return; // ✅ Prevents null context issues
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+            LayoutInflater inflater = LayoutInflater.from(getContext()); // ✅ Ensures correct layout inflater
+            View dialogBusinessAdView = inflater.inflate(R.layout.contactus_taytay_campus_dialog_submenu_subfragment, null);
+            builder.setView(dialogBusinessAdView);
+
+            AlertDialog dialogBusinessAd = builder.create();
+
+            if (dialogBusinessAd.getWindow() != null) {
+                dialogBusinessAd.getWindow().setBackgroundDrawableResource(R.drawable.rounded_dialog); // ✅ Apply Rounded Corners
+                dialogBusinessAd.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; // (Optional) Animation
+            }
+
+            LinearLayout closeButton = dialogBusinessAdView.findViewById(R.id.CloseButton);
+            closeButton.setOnClickListener(v -> {
+                dialogBusinessAd.dismiss();
+            });
+
+            // ✅ Prevent dismissing when clicking outside
+            dialogBusinessAd.setCancelable(false);
+            dialogBusinessAd.setCanceledOnTouchOutside(false);
+
+            // ✅ Handle Back Button Press
+            dialogBusinessAd.setOnKeyListener((dialog, keyCode, event) -> {
+                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                    dialogBusinessAd.dismiss(); // Isasara ang dialog
+                    return true; // Iwasan ang default back button behavior
+                }
+                return false;
+            });
+
+            dialogBusinessAd.show();
+        });
     }
 }

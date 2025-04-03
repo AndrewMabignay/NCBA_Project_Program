@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            >
+        >
             <!-- MASTER IN BUSINESS ADMINISTRATION (MBA) [TITLE] -->
             <TextView
                 android:layout_width="match_parent"
@@ -72,6 +72,62 @@
                 android:shadowRadius="4"
             />
 
+            <HorizontalScrollView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                android:layout_gravity="center"
+                android:paddingHorizontal="20dp"
+            >
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:orientation="horizontal"
+                >
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/accounting_one"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                    />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/accounting_two"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                    />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/accounting_three"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                    />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/accounting_four"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                    />
+
+                    <!-- Add more images if needed -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,6 +140,62 @@
                 android:textColor="@color/black"
                 android:textSize="13sp"
             />
+
+            <HorizontalScrollView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                android:layout_gravity="center"
+                android:paddingHorizontal="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/management_accounting_one"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/management_accounting_two"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/management_accounting_three"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/management_accounting_four"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        />
+
+                    <!-- Add more images if needed -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -226,26 +338,6 @@
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:paddingLeft="12dp"
-            />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="How does the BS in Accountancy incorporate practical learning"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="13sp"
-                android:background="@drawable/shadow_subheader_box_second"
-                android:layout_marginTop="14dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingVertical="20dp"
-                android:paddingHorizontal="30dp"
-                android:letterSpacing="0.03"
-                android:lineHeight="33dp"
-                android:shadowColor="@color/black"
-                android:shadowDx="2"
-                android:shadowDy="2"
-                android:shadowRadius="4"
             />
         </LinearLayout>
     </ScrollView>
